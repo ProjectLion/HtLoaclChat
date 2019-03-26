@@ -1,0 +1,2 @@
+# HtLoaclChat
+这是一个在局域网内聊天的demo，基于Socket、WebRTC。其中包括基于socket搭建的iOS服务端、基于socket、WebRTC搭建的客户端
