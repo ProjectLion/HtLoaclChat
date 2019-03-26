@@ -1,0 +1,6 @@
+framework module Pods_HtLocalChatServer {
+  umbrella header "Pods-HtLocalChatServer-umbrella.h"
+
+  export *
+  module * { export * }
+}
