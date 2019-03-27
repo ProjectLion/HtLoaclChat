@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VideoChatVC" customModule="HtLocalChatClient" customModuleProvider="target">
+            <connections>
+                <outlet property="myVideoView" destination="CxD-pJ-wf8" id="91c-EL-HN9"/>
+                <outlet property="remote" destination="8IM-7d-LpR" id="aOd-LG-ZQ1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CxD-pJ-wf8" userLabel="myVideoView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8IM-7d-LpR" userLabel="remoteVideoView">
+                    <rect key="frame" x="10" y="44" width="180" height="260"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="260" id="W0p-xV-FK1"/>
+                        <constraint firstAttribute="width" constant="180" id="YhM-Mn-qRl"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ac-5J-dx9">
+                    <rect key="frame" x="166" y="549" width="43" height="38"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="挂断"/>
+                    <connections>
+                        <action selector="closeVideo:" destination="-1" eventType="touchUpInside" id="3lX-Wd-zCW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CxD-pJ-wf8" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="4HF-dv-JZS"/>
+                <constraint firstItem="3Ac-5J-dx9" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-80" id="5Cl-3q-blT"/>
+                <constraint firstItem="CxD-pJ-wf8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DaB-Om-usp"/>
+                <constraint firstItem="3Ac-5J-dx9" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EYH-yP-QdI"/>
+                <constraint firstItem="8IM-7d-LpR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="IJ5-rP-6K3"/>
+                <constraint firstItem="CxD-pJ-wf8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Y49-X4-Tn7"/>
+                <constraint firstItem="CxD-pJ-wf8" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="iOC-5J-eVE"/>
+                <constraint firstItem="8IM-7d-LpR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="lXW-Ib-WEh"/>
+            </constraints>
+            <point key="canvasLocation" x="50.399999999999999" y="92.203898050974516"/>
+        </view>
+    </objects>
+</document>

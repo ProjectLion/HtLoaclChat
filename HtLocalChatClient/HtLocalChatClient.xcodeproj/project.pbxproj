@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5B53F64AE70842ECD91BE481 /* Pods_HtLocalChatClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB3BDF31492C1B0A20259AA9 /* Pods_HtLocalChatClient.framework */; };
+		8E9E3766224A0E13007BFA21 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E3764224A0E13007BFA21 /* LoginVC.swift */; };
+		8E9E3767224A0E13007BFA21 /* LoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E9E3765224A0E13007BFA21 /* LoginVC.xib */; };
+		8E9E376E224A2765007BFA21 /* UserListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E376C224A2765007BFA21 /* UserListVC.swift */; };
+		8E9E376F224A2765007BFA21 /* UserListVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E9E376D224A2765007BFA21 /* UserListVC.xib */; };
+		8E9E3773224B1270007BFA21 /* VideoChatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E3772224B1270007BFA21 /* VideoChatManager.swift */; };
+		8E9E3776224B138A007BFA21 /* StaticValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E3775224B138A007BFA21 /* StaticValue.swift */; };
+		8E9E377A224B1A21007BFA21 /* HTPrivatePermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E3779224B1A21007BFA21 /* HTPrivatePermission.swift */; };
+		8E9E377C224B1AB9007BFA21 /* HTMBProgressExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E377B224B1AB9007BFA21 /* HTMBProgressExtension.swift */; };
+		8E9E377F224B3736007BFA21 /* VideoChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E377D224B3736007BFA21 /* VideoChatVC.swift */; };
+		8E9E3780224B3736007BFA21 /* VideoChatVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E9E377E224B3736007BFA21 /* VideoChatVC.xib */; };
 		8EDA94A12249FF0900822DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA94A02249FF0900822DDD /* AppDelegate.swift */; };
 		8EDA94A32249FF0900822DDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA94A22249FF0900822DDD /* ViewController.swift */; };
 		8EDA94A62249FF0900822DDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDA94A42249FF0900822DDD /* Main.storyboard */; };
@@ -16,6 +26,7 @@
 		8EDA94AE2249FF0900822DDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDA94AC2249FF0900822DDD /* LaunchScreen.storyboard */; };
 		8EDA94B92249FF0900822DDD /* HtLocalChatClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA94B82249FF0900822DDD /* HtLocalChatClientTests.swift */; };
 		8EDA94C42249FF0A00822DDD /* HtLocalChatClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA94C32249FF0A00822DDD /* HtLocalChatClientUITests.swift */; };
+		8EDA94D6224A058B00822DDD /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA94D5224A058B00822DDD /* SocketManager.swift */; };
 		9106348F4DE3DBFE744CC63F /* Pods_HtLocalChatClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D0F032A68E66A5C5B5DA291 /* Pods_HtLocalChatClientTests.framework */; };
 		B30F604047CE2CF23233A8A3 /* Pods_HtLocalChatClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01C8B20A4B628207AE9333D0 /* Pods_HtLocalChatClientUITests.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +54,16 @@
 		57B67F3A4563B02CF2BE0DC4 /* Pods-HtLocalChatClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HtLocalChatClientTests.debug.xcconfig"; path = "Target Support Files/Pods-HtLocalChatClientTests/Pods-HtLocalChatClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D0F032A68E66A5C5B5DA291 /* Pods_HtLocalChatClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HtLocalChatClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DAB2DD0FE170812FB3B3FE8 /* Pods-HtLocalChatClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HtLocalChatClientUITests.release.xcconfig"; path = "Target Support Files/Pods-HtLocalChatClientUITests/Pods-HtLocalChatClientUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8E9E3764224A0E13007BFA21 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		8E9E3765224A0E13007BFA21 /* LoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginVC.xib; sourceTree = "<group>"; };
+		8E9E376C224A2765007BFA21 /* UserListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListVC.swift; sourceTree = "<group>"; };
+		8E9E376D224A2765007BFA21 /* UserListVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserListVC.xib; sourceTree = "<group>"; };
+		8E9E3772224B1270007BFA21 /* VideoChatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoChatManager.swift; sourceTree = "<group>"; };
+		8E9E3775224B138A007BFA21 /* StaticValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticValue.swift; sourceTree = "<group>"; };
+		8E9E3779224B1A21007BFA21 /* HTPrivatePermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTPrivatePermission.swift; sourceTree = "<group>"; };
+		8E9E377B224B1AB9007BFA21 /* HTMBProgressExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMBProgressExtension.swift; sourceTree = "<group>"; };
+		8E9E377D224B3736007BFA21 /* VideoChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoChatVC.swift; sourceTree = "<group>"; };
+		8E9E377E224B3736007BFA21 /* VideoChatVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoChatVC.xib; sourceTree = "<group>"; };
 		8EDA949D2249FF0900822DDD /* HtLocalChatClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HtLocalChatClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDA94A02249FF0900822DDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EDA94A22249FF0900822DDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +78,7 @@
 		8EDA94BF2249FF0A00822DDD /* HtLocalChatClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HtLocalChatClientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDA94C32249FF0A00822DDD /* HtLocalChatClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtLocalChatClientUITests.swift; sourceTree = "<group>"; };
 		8EDA94C52249FF0A00822DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EDA94D5224A058B00822DDD /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
 		90A52FEA7BCB2C37F7330DCD /* Pods-HtLocalChatClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HtLocalChatClientUITests.debug.xcconfig"; path = "Target Support Files/Pods-HtLocalChatClientUITests/Pods-HtLocalChatClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9E4D720D3FA3DAD35C82AFA /* Pods-HtLocalChatClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HtLocalChatClient.debug.xcconfig"; path = "Target Support Files/Pods-HtLocalChatClient/Pods-HtLocalChatClient.debug.xcconfig"; sourceTree = "<group>"; };
 		BB3BDF31492C1B0A20259AA9 /* Pods_HtLocalChatClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HtLocalChatClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,8 +123,46 @@
 				90A52FEA7BCB2C37F7330DCD /* Pods-HtLocalChatClientUITests.debug.xcconfig */,
 				8DAB2DD0FE170812FB3B3FE8 /* Pods-HtLocalChatClientUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8E9E3761224A0DD7007BFA21 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E9E3764224A0E13007BFA21 /* LoginVC.swift */,
+				8E9E3765224A0E13007BFA21 /* LoginVC.xib */,
+				8E9E376C224A2765007BFA21 /* UserListVC.swift */,
+				8E9E376D224A2765007BFA21 /* UserListVC.xib */,
+				8E9E377D224B3736007BFA21 /* VideoChatVC.swift */,
+				8E9E377E224B3736007BFA21 /* VideoChatVC.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8E9E3762224A0DE8007BFA21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E9E3763224A0DEF007BFA21 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8E9E3774224B1363007BFA21 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				8E9E377B224B1AB9007BFA21 /* HTMBProgressExtension.swift */,
+				8E9E3779224B1A21007BFA21 /* HTPrivatePermission.swift */,
+				8EDA94D5224A058B00822DDD /* SocketManager.swift */,
+				8E9E3772224B1270007BFA21 /* VideoChatManager.swift */,
+				8E9E3775224B138A007BFA21 /* StaticValue.swift */,
+			);
+			path = Others;
 			sourceTree = "<group>";
 		};
 		8EDA94942249FF0900822DDD = {
@@ -130,6 +190,10 @@
 		8EDA949F2249FF0900822DDD /* HtLocalChatClient */ = {
 			isa = PBXGroup;
 			children = (
+				8E9E3774224B1363007BFA21 /* Others */,
+				8E9E3763224A0DEF007BFA21 /* Views */,
+				8E9E3762224A0DE8007BFA21 /* Models */,
+				8E9E3761224A0DD7007BFA21 /* ViewControllers */,
 				8EDA94A02249FF0900822DDD /* AppDelegate.swift */,
 				8EDA94A22249FF0900822DDD /* ViewController.swift */,
 				8EDA94A42249FF0900822DDD /* Main.storyboard */,
@@ -277,8 +341,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9E376F224A2765007BFA21 /* UserListVC.xib in Resources */,
 				8EDA94AE2249FF0900822DDD /* LaunchScreen.storyboard in Resources */,
+				8E9E3780224B3736007BFA21 /* VideoChatVC.xib in Resources */,
 				8EDA94AB2249FF0900822DDD /* Assets.xcassets in Resources */,
+				8E9E3767224A0E13007BFA21 /* LoginVC.xib in Resources */,
 				8EDA94A62249FF0900822DDD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,9 +468,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9E3773224B1270007BFA21 /* VideoChatManager.swift in Sources */,
+				8E9E377C224B1AB9007BFA21 /* HTMBProgressExtension.swift in Sources */,
+				8E9E3776224B138A007BFA21 /* StaticValue.swift in Sources */,
+				8E9E377A224B1A21007BFA21 /* HTPrivatePermission.swift in Sources */,
 				8EDA94A32249FF0900822DDD /* ViewController.swift in Sources */,
 				8EDA94A92249FF0900822DDD /* HtLocalChatClient.xcdatamodeld in Sources */,
+				8E9E377F224B3736007BFA21 /* VideoChatVC.swift in Sources */,
+				8EDA94D6224A058B00822DDD /* SocketManager.swift in Sources */,
 				8EDA94A12249FF0900822DDD /* AppDelegate.swift in Sources */,
+				8E9E3766224A0E13007BFA21 /* LoginVC.swift in Sources */,
+				8E9E376E224A2765007BFA21 /* UserListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,7 +584,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -564,7 +639,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -581,7 +656,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85C366UKGF;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HtLocalChatClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -600,7 +677,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85C366UKGF;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = HtLocalChatClient/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
