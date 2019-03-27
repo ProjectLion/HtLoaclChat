@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3E1D7E48139426A79C139C4A /* Pods_HtLocalChatServerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473972E249E919553699066D /* Pods_HtLocalChatServerUITests.framework */; };
 		516DCCC45D5F4ABDAB52782C /* Pods_HtLocalChatServer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCBF049422F659DFC53367B /* Pods_HtLocalChatServer.framework */; };
+		8E9E3771224B0D54007BFA21 /* UsersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E3770224B0D54007BFA21 /* UsersManager.swift */; };
+		8E9E3778224B1742007BFA21 /* StaticValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9E3777224B1742007BFA21 /* StaticValue.swift */; };
 		8EDA94642249FEA500822DDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA94632249FEA500822DDD /* AppDelegate.swift */; };
 		8EDA94662249FEA500822DDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA94652249FEA500822DDD /* ViewController.swift */; };
 		8EDA94692249FEA500822DDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDA94672249FEA500822DDD /* Main.storyboard */; };
@@ -17,6 +19,7 @@
 		8EDA94712249FEA600822DDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EDA946F2249FEA600822DDD /* LaunchScreen.storyboard */; };
 		8EDA947C2249FEA600822DDD /* HtLocalChatServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA947B2249FEA600822DDD /* HtLocalChatServerTests.swift */; };
 		8EDA94872249FEA600822DDD /* HtLocalChatServerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA94862249FEA600822DDD /* HtLocalChatServerUITests.swift */; };
+		8EDA94D4224A016300822DDD /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA94D3224A016300822DDD /* SocketManager.swift */; };
 		ADF11B5E274F6A601F024F60 /* Pods_HtLocalChatServerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B2073A180A7822300EC4F4 /* Pods_HtLocalChatServerTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +47,8 @@
 		54E6450226C89F3CFF08A536 /* Pods-HtLocalChatServerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HtLocalChatServerTests.debug.xcconfig"; path = "Target Support Files/Pods-HtLocalChatServerTests/Pods-HtLocalChatServerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		58504762CF328DB3853EA23C /* Pods-HtLocalChatServerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HtLocalChatServerUITests.debug.xcconfig"; path = "Target Support Files/Pods-HtLocalChatServerUITests/Pods-HtLocalChatServerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		67D09821BFD598D79D98AC26 /* Pods-HtLocalChatServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HtLocalChatServer.release.xcconfig"; path = "Target Support Files/Pods-HtLocalChatServer/Pods-HtLocalChatServer.release.xcconfig"; sourceTree = "<group>"; };
+		8E9E3770224B0D54007BFA21 /* UsersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersManager.swift; sourceTree = "<group>"; };
+		8E9E3777224B1742007BFA21 /* StaticValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticValue.swift; sourceTree = "<group>"; };
 		8EDA94602249FEA500822DDD /* HtLocalChatServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HtLocalChatServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDA94632249FEA500822DDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EDA94652249FEA500822DDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 		8EDA94822249FEA600822DDD /* HtLocalChatServerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HtLocalChatServerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDA94862249FEA600822DDD /* HtLocalChatServerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtLocalChatServerUITests.swift; sourceTree = "<group>"; };
 		8EDA94882249FEA600822DDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EDA94D3224A016300822DDD /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
 		A2B2073A180A7822300EC4F4 /* Pods_HtLocalChatServerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HtLocalChatServerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4EEFBFA85AEE7E8CFA2FBE /* Pods-HtLocalChatServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HtLocalChatServer.debug.xcconfig"; path = "Target Support Files/Pods-HtLocalChatServer/Pods-HtLocalChatServer.debug.xcconfig"; sourceTree = "<group>"; };
 		C25C96853B8CF37CFDC1B39E /* Pods-HtLocalChatServerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HtLocalChatServerUITests.release.xcconfig"; path = "Target Support Files/Pods-HtLocalChatServerUITests/Pods-HtLocalChatServerUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -146,6 +152,9 @@
 				8EDA946F2249FEA600822DDD /* LaunchScreen.storyboard */,
 				8EDA94722249FEA600822DDD /* Info.plist */,
 				8EDA946A2249FEA500822DDD /* HtLocalChatServer.xcdatamodeld */,
+				8EDA94D3224A016300822DDD /* SocketManager.swift */,
+				8E9E3770224B0D54007BFA21 /* UsersManager.swift */,
+				8E9E3777224B1742007BFA21 /* StaticValue.swift */,
 			);
 			path = HtLocalChatServer;
 			sourceTree = "<group>";
@@ -396,8 +405,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E9E3771224B0D54007BFA21 /* UsersManager.swift in Sources */,
 				8EDA94662249FEA500822DDD /* ViewController.swift in Sources */,
 				8EDA946C2249FEA500822DDD /* HtLocalChatServer.xcdatamodeld in Sources */,
+				8E9E3778224B1742007BFA21 /* StaticValue.swift in Sources */,
+				8EDA94D4224A016300822DDD /* SocketManager.swift in Sources */,
 				8EDA94642249FEA500822DDD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -559,7 +571,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -577,6 +589,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85C366UKGF;
 				INFOPLIST_FILE = HtLocalChatServer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,6 +609,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 85C366UKGF;
 				INFOPLIST_FILE = HtLocalChatServer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
