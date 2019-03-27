@@ -1,0 +1,1712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		F8E4A6967D47CAE307D28F88CE79F267 /* WebRTC */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1C77280B0DDEB1E12A5B3F534E7A2F89 /* Build configuration list for PBXAggregateTarget "WebRTC" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = WebRTC;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		02CB9EDB7F6D7B1B6FA0119E732F5ADF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F24851033785A8C53602E3BE207416 /* Foundation.framework */; };
+		04B8788E00E9C1849BCA2B3C166066D6 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED3483DB04DF5B38AC5B50C59454334 /* Typealiases.swift */; };
+		06A3855C9FD3289DD228E39CFF335CD8 /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F467178C61006BE0D47B64417A6A67 /* ConstraintInsetTarget.swift */; };
+		06EEE6291B0F7A4D920FFDFED8EC964F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F24851033785A8C53602E3BE207416 /* Foundation.framework */; };
+		0826A744790A6199B9CC4592E7B964E3 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D04C70E42D99C146FD041304778DC9 /* ConstraintPriorityTarget.swift */; };
+		09DCAE72CADB3D5CDAEE45447554D05C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B61385E6C5C6F51EF1DD9DC778058A3 /* Security.framework */; };
+		16A1C1D02E81BC979D872A161707066F /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801C3CA4C55A64FC633CDD029AD214CC /* ConstraintAttributes.swift */; };
+		1BD1BBFCE18DA90BEE46B9EE01854ED6 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA04BAB1A8317C2E6BB8283F3AAA3AC /* ConstraintViewDSL.swift */; };
+		1CB3796F161A46948538E70259AD5E91 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DFCDAD188EA370AA52ED64ABACB959 /* ConstraintItem.swift */; };
+		1F17DF4932C1ACC0F8F89D1B7498BD25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F24851033785A8C53602E3BE207416 /* Foundation.framework */; };
+		22E834E121421E60B1E164F7C19F19E4 /* Pods-HtLocalChatClientTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E32893F16EE85FC5D8F1A7D34CAFE62 /* Pods-HtLocalChatClientTests-dummy.m */; };
+		249915C611A65AE65C9F93ADC9C282BC /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E5144C3F3522058EC089366AB4EC07 /* ConstraintView.swift */; };
+		276F082DA0A032AB6F2998B3A8E2FA96 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EB40875EE8DF0A4B96A7BDFA8FE3FA6 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D3534BFC37FBEA63F4B33542F7E2A97 /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1576047EA666CFC3D67CDF97C6D253CE /* ConstraintPriority.swift */; };
+		30169A0026017D898DAC180CC3218F79 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 8068D78563C9DF2B6E3AC20339DAA386 /* GCDAsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		3464F5E7DF08DD3F8F5CFF5FD50FDA0C /* Pods-HtLocalChatClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6118467BF412793655DC6571F08A1936 /* Pods-HtLocalChatClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DFBB3DE642AEE54677127A96C0773F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F24851033785A8C53602E3BE207416 /* Foundation.framework */; };
+		40AD22ADD8578FE3CC713DEA8DB216B0 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8538AE61381CC6C84D56CBF573262A /* ConstraintLayoutSupportDSL.swift */; };
+		4247E576E4A315414A1FEC4BC9960A93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F24851033785A8C53602E3BE207416 /* Foundation.framework */; };
+		443E4CFA6433019D0EDD192E08866F50 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F51C0D40DDCA33E41392F51C4009EA5D /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44BDB0E65FEDA52D48282F5FB038E8E1 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FE764D9E028FC1CFACB4FF1A4EAF090 /* ConstraintInsets.swift */; };
+		4BD3B1D588017EA43F3E98563319DC19 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 579C923BBB8147129187703B2494FCAA /* MBProgressHUD.m */; };
+		4E533656A9C5F376F981B55116CBC987 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413C1F4AF8B0B64B22AECFA8FA65523F /* ConstraintLayoutGuideDSL.swift */; };
+		4EB100FF9229539CA4094551779BF2BE /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A847E14ACF9C0DA91DA69DA4F5A8C663 /* CocoaAsyncSocket-dummy.m */; };
+		5151BB7E46C617221C89EBB69ACF334F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3682365C691C790727DA03B444A5EDCD /* CoreGraphics.framework */; };
+		535AB9D05452BA07AB2132B338FD29E8 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CFFD38A14D45F2B65F114CBD7E2D31 /* ConstraintConfig.swift */; };
+		58BB2F41822954D83EE325F53186CEC6 /* Pods-HtLocalChatClientUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 058E5933CC78493FD1452FEB9C152417 /* Pods-HtLocalChatClientUITests-dummy.m */; };
+		5F50FAF1A6C1058541CBAFEF0C05B4EE /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4CF7036CBCAF2F30469526420F19022 /* ConstraintLayoutSupport.swift */; };
+		5FC6DD6098A4A64A713B33A88B143BFD /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959F1B3B228CE22EDDEB4580D1DBA893 /* ConstraintLayoutGuide+Extensions.swift */; };
+		621B52B4C849ABEB1E1386ECADE029E4 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AAE36D29B64AE31B68A9322A9B2546 /* ConstraintMaker.swift */; };
+		732CB622FA80ED1D254B281044AAF61B /* Pods-HtLocalChatClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5844391A47A2934A98F90D023334A10A /* Pods-HtLocalChatClient-dummy.m */; };
+		736463C7BAEC936E2EFB4435AEB93DFA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF84748F1A09C419B1BCA4D6D3950E1 /* CFNetwork.framework */; };
+		766756A684C1547EABBED14345FEBCCD /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF811042BB4C553BFE93CEAC1F229661 /* SnapKit-dummy.m */; };
+		78DC5DD0BDCCEBF845F4020E67B98A16 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8124A63CB0A224BE38798972B53C84D4 /* ConstraintRelation.swift */; };
+		84D92FC60D98C077AB3A6D56AEBE8FEB /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = EAB71D3BCA70D32C3C8C2F0E4DEB8C1B /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F370F9E019AE94D16E082939375CC59 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445FADFECEDB22390550804C04954A29 /* ConstraintMakerRelatable.swift */; };
+		9146D9F88E9974001D2885BB00055BDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74F24851033785A8C53602E3BE207416 /* Foundation.framework */; };
+		934E213E41F6BB472495FF468BE6E8B4 /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7664E46A1F9A691DAE2C151E61A8D2C6 /* ConstraintLayoutGuide.swift */; };
+		946B8DE90A7C6B3872C82AA2AF240118 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = F451C6C6BED1EB27D6F3AB94E3E247E6 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9FD56E2B1C47178900F3623ED185460 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA79A215E6927A4D9D362449729BD8E /* LayoutConstraintItem.swift */; };
+		AC166C66311BCAAAD1D9289A80E51CCF /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C38C968DF31806E03E61B260E3B665 /* GCDAsyncSocket.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		AC8EDE451874625FCE26F3ADFF94F3B5 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B0B29D6F1991272416FEC9022F3291 /* ConstraintDescription.swift */; };
+		ADBC1556ECCF5CF23D10ECC9361E1581 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D964E78385665A5CEB1B5226BB7FCC /* ConstraintMakerPriortizable.swift */; };
+		AE81A088AFCB2058F925EFEA8580AF6E /* Pods-HtLocalChatClientUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B964E36DB476B339F330B10BB27C5D7 /* Pods-HtLocalChatClientUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFD46869C50E29A93135A54B57A531F8 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7216D805779BEAE81B352F36319436ED /* ConstraintView+Extensions.swift */; };
+		B06BA7A1D2AA2DAA8D7B7FA9843F2210 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC5FD8D6CE3E8A48E8827C111B7C35E /* ConstraintMultiplierTarget.swift */; };
+		BD92CEA93C4A82DC82B4B52264DAF07B /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85BEB665AD9DB37B0FB212048E993632 /* ConstraintRelatableTarget.swift */; };
+		BF1D85A29FBA0AFA37DCACDCBAFC241C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4543FBD39E7DC8F8F6A17F4FAFD11ECB /* QuartzCore.framework */; };
+		C15B34F9C5F734C5E7AA3F622BFDD6A6 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB0C6FEAF4678F98712E7A869B63E7D /* ConstraintMakerEditable.swift */; };
+		C31470E92B1A691AC3D3D55A127DCBF0 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A69F128F6D6F9BA08FF312487E79E7DD /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5BF5181F4227A5BE22D3B941F1A8D92 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FAD9E84AAF802A2461FA9EA2D0BE22 /* ConstraintOffsetTarget.swift */; };
+		CD6E2AA218EB7B80E55E53EE74401963 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67F57273112DFD9E3E2EBB05992A44BF /* ConstraintConstantTarget.swift */; };
+		D966EB561A0A6A10BAF414F0B952E95E /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DF7FF8BD4171B67374BC0080AC6F146 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBD0C2EE88FF45CE7C30ED419B482D6B /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB46FB0CAB861E79F1A88ED544A8CB49 /* UILayoutSupport+Extensions.swift */; };
+		DEE3DE6D6C043DABF234DB08F58816E6 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05E4652C048EECE9FCBA22EC1B89BF8 /* Constraint.swift */; };
+		E1F5E6E6FFBCE2F8DC413365951819D8 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B08DFD06B5CD63D4D6D91E68D08CF /* ConstraintMakerFinalizable.swift */; };
+		E9E39F50F9D9DB9B3C27914819078FB0 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27274BC314A171AAC9FC13DC06893BE /* LayoutConstraint.swift */; };
+		ED760680ABD29889FB4FD3BD833BF948 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D64C0334FCD8B649A2AEC23D420EEE /* Debugging.swift */; };
+		EEB4A455551D7B917E1AD4B0A1A964FF /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26A7DE7C26F4AD2A9940F6AAF620D3 /* MBProgressHUD-dummy.m */; };
+		F26D269516ED36CD4FC7560A3EBF591F /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39570F1D5A4AFF4E3B8C0081ABBAC212 /* ConstraintDSL.swift */; };
+		F83511F01C916995021C52FC74AB7D2A /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28BA2A0DFFC32A6232A28E650C662A3 /* ConstraintMakerExtendable.swift */; };
+		FD9294CD5ACD772286BBC1CD783DCAA7 /* Pods-HtLocalChatClientTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C3B9B75C9BF6023075A89C624C57E6F /* Pods-HtLocalChatClientTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3FD6993CE0D804F3D5F53B23D344144A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91EECFB084FE688E06AC54C92C821BF6;
+			remoteInfo = "Pods-HtLocalChatClient";
+		};
+		6D5FC5DE4C2E5584071D2F4F5F841C52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8849BDC5FE50F23D2D00B456D85BA88B;
+			remoteInfo = SnapKit;
+		};
+		C04F77DF8C92D31FF29DC84DDFE83022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB9F16A11CCB7B75DFD4C14783C83019;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		C6370E5A4A540AA942CC06D986AE7519 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD408BAB384B6DDA88A50A16FB158B66;
+			remoteInfo = MBProgressHUD;
+		};
+		C790F0186D9078EBE7798B8CB2530472 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91EECFB084FE688E06AC54C92C821BF6;
+			remoteInfo = "Pods-HtLocalChatClient";
+		};
+		FAF637226CC654E9D7CBA2620C6E9291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8E4A6967D47CAE307D28F88CE79F267;
+			remoteInfo = WebRTC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		058E5933CC78493FD1452FEB9C152417 /* Pods-HtLocalChatClientUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HtLocalChatClientUITests-dummy.m"; sourceTree = "<group>"; };
+		0597AB655AD6A0B142F8C48BB833F163 /* Pods-HtLocalChatClientTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HtLocalChatClientTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		0A590EF448B33A3E14AB5E39AA37B01A /* Pods-HtLocalChatClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HtLocalChatClient.debug.xcconfig"; sourceTree = "<group>"; };
+		0B964E36DB476B339F330B10BB27C5D7 /* Pods-HtLocalChatClientUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HtLocalChatClientUITests-umbrella.h"; sourceTree = "<group>"; };
+		0BCC96EC9E3CF9D91149EA0ED605C5CB /* RTCVideoFrameBuffer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoFrameBuffer.h; path = WebRTC.framework/Headers/RTCVideoFrameBuffer.h; sourceTree = "<group>"; };
+		0CB0C6FEAF4678F98712E7A869B63E7D /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
+		0E32893F16EE85FC5D8F1A7D34CAFE62 /* Pods-HtLocalChatClientTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HtLocalChatClientTests-dummy.m"; sourceTree = "<group>"; };
+		0F1B1DB7F08452D3ED938BCD37241B3E /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		0F8BA168A16CB27C93D38ADA832A1291 /* UIDevice+RTCDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+RTCDevice.h"; path = "WebRTC.framework/Headers/UIDevice+RTCDevice.h"; sourceTree = "<group>"; };
+		0FE764D9E028FC1CFACB4FF1A4EAF090 /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
+		14C38C968DF31806E03E61B260E3B665 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		1576047EA666CFC3D67CDF97C6D253CE /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
+		177107AE8B6F5AA1920F17ED9B8E1B9D /* RTCDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCDispatcher.h; path = WebRTC.framework/Headers/RTCDispatcher.h; sourceTree = "<group>"; };
+		17DFCDAD188EA370AA52ED64ABACB959 /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		1C3B9B75C9BF6023075A89C624C57E6F /* Pods-HtLocalChatClientTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HtLocalChatClientTests-umbrella.h"; sourceTree = "<group>"; };
+		1DE3B7AFCCB5DA0183D909E7B0D8DB8E /* RTCAudioSessionConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAudioSessionConfiguration.h; path = WebRTC.framework/Headers/RTCAudioSessionConfiguration.h; sourceTree = "<group>"; };
+		25AA60BEE394C4E796BEE54EB9A4E16B /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		285BC7487296B634FDAFDDAEEE8A2076 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
+		2A0E30F654A1EF7E056C66CE6DC975C1 /* Pods-HtLocalChatClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HtLocalChatClient.release.xcconfig"; sourceTree = "<group>"; };
+		317B33C8085FD5059FB307F47532B049 /* RTCRtpSender.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpSender.h; path = WebRTC.framework/Headers/RTCRtpSender.h; sourceTree = "<group>"; };
+		32F925762806A664B41524BEAB087040 /* RTCAudioTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAudioTrack.h; path = WebRTC.framework/Headers/RTCAudioTrack.h; sourceTree = "<group>"; };
+		332A4BBC30C509CDFDA8ED7B945FB183 /* RTCTracing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCTracing.h; path = WebRTC.framework/Headers/RTCTracing.h; sourceTree = "<group>"; };
+		3518291C625B3B508ECA8B6070E75101 /* Pods-HtLocalChatClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HtLocalChatClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		3682365C691C790727DA03B444A5EDCD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		39570F1D5A4AFF4E3B8C0081ABBAC212 /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
+		3A3AE60DBC6AEF77B6E5DCE05E6936B0 /* Pods-HtLocalChatClientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HtLocalChatClientUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B8538AE61381CC6C84D56CBF573262A /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
+		3C8449ED4021A143D7DE18A611A3F883 /* RTCVideoCapturer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoCapturer.h; path = WebRTC.framework/Headers/RTCVideoCapturer.h; sourceTree = "<group>"; };
+		3D92B4D68FA6DAFCB259E9A4BC48A899 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		3FAA56388E3DA0ED97001796C97A559E /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		413C1F4AF8B0B64B22AECFA8FA65523F /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
+		435B35F90E03E455F3E2694EFD1B5896 /* RTCConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCConfiguration.h; path = WebRTC.framework/Headers/RTCConfiguration.h; sourceTree = "<group>"; };
+		445FADFECEDB22390550804C04954A29 /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
+		4543FBD39E7DC8F8F6A17F4FAFD11ECB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		4978646629C137D8354242F9399B0430 /* RTCRtpReceiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpReceiver.h; path = WebRTC.framework/Headers/RTCRtpReceiver.h; sourceTree = "<group>"; };
+		49AAE36D29B64AE31B68A9322A9B2546 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
+		4AACF99C5B8455F27F426AB2EBF323DF /* RTCVideoDecoderVP8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoDecoderVP8.h; path = WebRTC.framework/Headers/RTCVideoDecoderVP8.h; sourceTree = "<group>"; };
+		4BBB0D51A22FF47F3820A8FD17C88651 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		4C5944C06D51A78EC47554B5BD538811 /* RTCVideoCodecFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoCodecFactory.h; path = WebRTC.framework/Headers/RTCVideoCodecFactory.h; sourceTree = "<group>"; };
+		4D4E0B4CFCA13B0B8287D5EEFECE0DEE /* RTCSSLAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCSSLAdapter.h; path = WebRTC.framework/Headers/RTCSSLAdapter.h; sourceTree = "<group>"; };
+		4DF7FF8BD4171B67374BC0080AC6F146 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		4EA04BAB1A8317C2E6BB8283F3AAA3AC /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
+		4ED3483DB04DF5B38AC5B50C59454334 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		50946C3121AEE8086B940EE52CEF688D /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		5625E0B8F5CFCF0DA9FE8A88A38C289A /* Pods-HtLocalChatClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HtLocalChatClient-Info.plist"; sourceTree = "<group>"; };
+		563EA855313E174862D508CBC81C4E90 /* RTCMTLVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMTLVideoView.h; path = WebRTC.framework/Headers/RTCMTLVideoView.h; sourceTree = "<group>"; };
+		575A1DC21F9DCD3686700DA412EF03C8 /* RTCVideoViewShading.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoViewShading.h; path = WebRTC.framework/Headers/RTCVideoViewShading.h; sourceTree = "<group>"; };
+		579C923BBB8147129187703B2494FCAA /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		5844391A47A2934A98F90D023334A10A /* Pods-HtLocalChatClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HtLocalChatClient-dummy.m"; sourceTree = "<group>"; };
+		5931A51A551AF0B57184FAB1CF166A05 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		594B34F9CB03BDC364E0A5E73733FACF /* RTCCameraVideoCapturer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCCameraVideoCapturer.h; path = WebRTC.framework/Headers/RTCCameraVideoCapturer.h; sourceTree = "<group>"; };
+		59D87D44A4CD20648907AA30D3255238 /* RTCVideoEncoderVP9.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoEncoderVP9.h; path = WebRTC.framework/Headers/RTCVideoEncoderVP9.h; sourceTree = "<group>"; };
+		5DE400DD0BCD48E89C80390B37B2A557 /* RTCAVFoundationVideoSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAVFoundationVideoSource.h; path = WebRTC.framework/Headers/RTCAVFoundationVideoSource.h; sourceTree = "<group>"; };
+		5EA79A215E6927A4D9D362449729BD8E /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
+		5FD0C441F2D1B2F38104916AE74C65BD /* Pods-HtLocalChatClientUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HtLocalChatClientUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6056FE61DB49499EBE249DC31A635259 /* RTCMediaConstraints.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMediaConstraints.h; path = WebRTC.framework/Headers/RTCMediaConstraints.h; sourceTree = "<group>"; };
+		6118467BF412793655DC6571F08A1936 /* Pods-HtLocalChatClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HtLocalChatClient-umbrella.h"; sourceTree = "<group>"; };
+		64C0D0268CBDD4BA0DB23416596928A6 /* RTCPeerConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCPeerConnection.h; path = WebRTC.framework/Headers/RTCPeerConnection.h; sourceTree = "<group>"; };
+		64EB414AC84945DBCEBB5DC9420A083B /* RTCIntervalRange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCIntervalRange.h; path = WebRTC.framework/Headers/RTCIntervalRange.h; sourceTree = "<group>"; };
+		65E5144C3F3522058EC089366AB4EC07 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
+		67F57273112DFD9E3E2EBB05992A44BF /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
+		6C389A8E163F155CEAEA30691F8EAAEA /* Pods-HtLocalChatClient-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HtLocalChatClient-acknowledgements.plist"; sourceTree = "<group>"; };
+		6EC5FD8D6CE3E8A48E8827C111B7C35E /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
+		6F896515ECC25B5BAC888EA30FA1BC08 /* RTCMetricsSampleInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMetricsSampleInfo.h; path = WebRTC.framework/Headers/RTCMetricsSampleInfo.h; sourceTree = "<group>"; };
+		71370EA27F71C7BEC56CE4D04078D2D2 /* RTCVideoEncoderVP8.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoEncoderVP8.h; path = WebRTC.framework/Headers/RTCVideoEncoderVP8.h; sourceTree = "<group>"; };
+		7216D805779BEAE81B352F36319436ED /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
+		74F24851033785A8C53602E3BE207416 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7664E46A1F9A691DAE2C151E61A8D2C6 /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
+		777F3451150708E95B49C2D1A66577FA /* RTCVideoDecoderVP9.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoDecoderVP9.h; path = WebRTC.framework/Headers/RTCVideoDecoderVP9.h; sourceTree = "<group>"; };
+		79CA26D565D2A88E2AD229503FC0A069 /* RTCMediaSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMediaSource.h; path = WebRTC.framework/Headers/RTCMediaSource.h; sourceTree = "<group>"; };
+		7A64DA3AA22FE241D1C6430A7045736A /* Pods-HtLocalChatClientUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HtLocalChatClientUITests-Info.plist"; sourceTree = "<group>"; };
+		7AFC6FD4F95B4AD5D83264936930EB66 /* Pods-HtLocalChatClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HtLocalChatClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7B61385E6C5C6F51EF1DD9DC778058A3 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		7B8AB786F9CD0CE928DA39DABDA005DA /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
+		7C7E0531399263667E8DD560E5ACE674 /* RTCLegacyStatsReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCLegacyStatsReport.h; path = WebRTC.framework/Headers/RTCLegacyStatsReport.h; sourceTree = "<group>"; };
+		7E26A7DE7C26F4AD2A9940F6AAF620D3 /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		801C3CA4C55A64FC633CDD029AD214CC /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
+		8068D78563C9DF2B6E3AC20339DAA386 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		8124A63CB0A224BE38798972B53C84D4 /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
+		8248212E0E26667680760C8043A790E3 /* RTCVideoRenderer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoRenderer.h; path = WebRTC.framework/Headers/RTCVideoRenderer.h; sourceTree = "<group>"; };
+		850DAC14944B949522ACDB0A7B613F44 /* WebRTC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WebRTC.h; path = WebRTC.framework/Headers/WebRTC.h; sourceTree = "<group>"; };
+		85BEB665AD9DB37B0FB212048E993632 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
+		862AE427A9172CC563806E741530C1B1 /* Pods-HtLocalChatClientTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HtLocalChatClientTests.modulemap"; sourceTree = "<group>"; };
+		8EB40875EE8DF0A4B96A7BDFA8FE3FA6 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		8F1556D2E22A549ED89546E9CC24DDAE /* RTCIceServer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCIceServer.h; path = WebRTC.framework/Headers/RTCIceServer.h; sourceTree = "<group>"; };
+		917C7D0F3B307D23CA59AA1F30AB8035 /* RTCRtpCodecParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpCodecParameters.h; path = WebRTC.framework/Headers/RTCRtpCodecParameters.h; sourceTree = "<group>"; };
+		9464CD5C76DDB86365A54914BE1E5D61 /* RTCDataChannel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCDataChannel.h; path = WebRTC.framework/Headers/RTCDataChannel.h; sourceTree = "<group>"; };
+		959F1B3B228CE22EDDEB4580D1DBA893 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
+		960C5CBF7AF5D6B823CA78ADD27EA5DF /* RTCVideoCodecH264.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoCodecH264.h; path = WebRTC.framework/Headers/RTCVideoCodecH264.h; sourceTree = "<group>"; };
+		97624ACE5FA7681157C161AC9C761A23 /* RTCAudioSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAudioSource.h; path = WebRTC.framework/Headers/RTCAudioSource.h; sourceTree = "<group>"; };
+		989DFB9FE589535469014C1A166F75E7 /* Pods_HtLocalChatClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HtLocalChatClient.framework; path = "Pods-HtLocalChatClient.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9918825C79EB91983AFBDA080EB46220 /* RTCLogging.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCLogging.h; path = WebRTC.framework/Headers/RTCLogging.h; sourceTree = "<group>"; };
+		9AA1D39C1D56F44CF41C96FA518812C0 /* Pods_HtLocalChatClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HtLocalChatClientTests.framework; path = "Pods-HtLocalChatClientTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F8D2280D5B1F5767DC51C80291C1C75 /* RTCMetrics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMetrics.h; path = WebRTC.framework/Headers/RTCMetrics.h; sourceTree = "<group>"; };
+		A38D6A5F024EBC7D18018EBEE36644DA /* RTCSessionDescription.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCSessionDescription.h; path = WebRTC.framework/Headers/RTCSessionDescription.h; sourceTree = "<group>"; };
+		A4D04C70E42D99C146FD041304778DC9 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		A64B08DFD06B5CD63D4D6D91E68D08CF /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		A64CE548185CBCBC91E0F03E76A94998 /* RTCRtpParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpParameters.h; path = WebRTC.framework/Headers/RTCRtpParameters.h; sourceTree = "<group>"; };
+		A69F128F6D6F9BA08FF312487E79E7DD /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		A7216D4507220A5EFC27E7F5BCB0F40C /* Pods-HtLocalChatClient-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HtLocalChatClient-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A847E14ACF9C0DA91DA69DA4F5A8C663 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		AB02B20C259FDD7C3F524F12C875F75D /* RTCVideoFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoFrame.h; path = WebRTC.framework/Headers/RTCVideoFrame.h; sourceTree = "<group>"; };
+		ACEA3F4625E40D916139EB0E605382B5 /* RTCFileLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCFileLogger.h; path = WebRTC.framework/Headers/RTCFileLogger.h; sourceTree = "<group>"; };
+		AD90447C2D49BBC370B921F54A0D49C4 /* RTCAudioSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCAudioSession.h; path = WebRTC.framework/Headers/RTCAudioSession.h; sourceTree = "<group>"; };
+		ADAD3CB4C6B051DF7DF714E6EFBDD2EA /* RTCVideoSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoSource.h; path = WebRTC.framework/Headers/RTCVideoSource.h; sourceTree = "<group>"; };
+		B28BA2A0DFFC32A6232A28E650C662A3 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B5B91D7D3F3EC922086A41A07F3173EC /* RTCMediaStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMediaStream.h; path = WebRTC.framework/Headers/RTCMediaStream.h; sourceTree = "<group>"; };
+		B7A385245C599BF2369BCD250A54D996 /* RTCDataChannelConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCDataChannelConfiguration.h; path = WebRTC.framework/Headers/RTCDataChannelConfiguration.h; sourceTree = "<group>"; };
+		C06E6199066EAA261B2369B6D2529745 /* Pods-HtLocalChatClientUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HtLocalChatClientUITests.modulemap"; sourceTree = "<group>"; };
+		C07649C2B2879D3E616B4A3B93B2A516 /* Pods-HtLocalChatClientTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HtLocalChatClientTests-Info.plist"; sourceTree = "<group>"; };
+		C0CFFD38A14D45F2B65F114CBD7E2D31 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
+		C27274BC314A171AAC9FC13DC06893BE /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
+		C479E944DA06A1A4A0444C32C88DE4C3 /* RTCEAGLVideoView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCEAGLVideoView.h; path = WebRTC.framework/Headers/RTCEAGLVideoView.h; sourceTree = "<group>"; };
+		C4B0B29D6F1991272416FEC9022F3291 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
+		C4CF7036CBCAF2F30469526420F19022 /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
+		C5B1A4A7C0929D75E7479DF8A84FB239 /* Pods-HtLocalChatClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HtLocalChatClient.modulemap"; sourceTree = "<group>"; };
+		C6BB4E0AF51FAB57A6CD5CB6978BA4CD /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		C78A358D17390E17D9A09B4D50865606 /* RTCMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMacros.h; path = WebRTC.framework/Headers/RTCMacros.h; sourceTree = "<group>"; };
+		C9FAD9E84AAF802A2461FA9EA2D0BE22 /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		CB46E1BFC6F377EEAAD54547112C0019 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		D05E4652C048EECE9FCBA22EC1B89BF8 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
+		D0D0DBB61C85D2EDB2EA858584F650BE /* Pods_HtLocalChatClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HtLocalChatClientUITests.framework; path = "Pods-HtLocalChatClientUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6A293DD7B8311ACB86DAD97D2C7DB05 /* RTCVideoCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoCodec.h; path = WebRTC.framework/Headers/RTCVideoCodec.h; sourceTree = "<group>"; };
+		D94F90C086E3C0BA0CC1ECC79B34DE3F /* MBProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MBProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		D99D032A33F46C6296BA58956D448B8B /* Pods-HtLocalChatClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HtLocalChatClientUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DAEAC146331C54D05D1ACBB5B3E7E39A /* Pods-HtLocalChatClient-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HtLocalChatClient-frameworks.sh"; sourceTree = "<group>"; };
+		DB313C2674DD061B0F41ADB773D7EFFC /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
+		DB46FB0CAB861E79F1A88ED544A8CB49 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
+		DCF84748F1A09C419B1BCA4D6D3950E1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		DEFCBE552E297F3394FF763EF6788FDA /* CocoaAsyncSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.xcconfig; sourceTree = "<group>"; };
+		E1791FD7C9C798E0433E23DAD99585D4 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2D64C0334FCD8B649A2AEC23D420EEE /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
+		E39BE7EF8F693FB78B7E84234ED184B9 /* RTCIceCandidate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCIceCandidate.h; path = WebRTC.framework/Headers/RTCIceCandidate.h; sourceTree = "<group>"; };
+		EAB71D3BCA70D32C3C8C2F0E4DEB8C1B /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		EF2559FA7BF7C2C9D9F583950725203B /* RTCCameraPreviewView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCCameraPreviewView.h; path = WebRTC.framework/Headers/RTCCameraPreviewView.h; sourceTree = "<group>"; };
+		F01F82F047C30BEE6385A47490EFE3E0 /* SnapKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.xcconfig; sourceTree = "<group>"; };
+		F183586FACB1EBD3452851A79712C47E /* RTCFieldTrials.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCFieldTrials.h; path = WebRTC.framework/Headers/RTCFieldTrials.h; sourceTree = "<group>"; };
+		F23271839EAFAFF1872BBF7A1B34942C /* RTCRtpEncodingParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCRtpEncodingParameters.h; path = WebRTC.framework/Headers/RTCRtpEncodingParameters.h; sourceTree = "<group>"; };
+		F27BC85F2FA4663177FEF0F89F7B9AA8 /* RTCPeerConnectionFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCPeerConnectionFactory.h; path = WebRTC.framework/Headers/RTCPeerConnectionFactory.h; sourceTree = "<group>"; };
+		F3C7B2EF687C1CED3DBDE3C28FD704D8 /* WebRTC.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WebRTC.xcconfig; sourceTree = "<group>"; };
+		F451C6C6BED1EB27D6F3AB94E3E247E6 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		F4D964E78385665A5CEB1B5226BB7FCC /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		F4F467178C61006BE0D47B64417A6A67 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
+		F51C0D40DDCA33E41392F51C4009EA5D /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
+		F6869AA4BBE310125923B37CA88FCB44 /* Pods-HtLocalChatClientUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HtLocalChatClientUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F6BE8824B000DAEEBC272FEB1A5697EE /* RTCMediaStreamTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCMediaStreamTrack.h; path = WebRTC.framework/Headers/RTCMediaStreamTrack.h; sourceTree = "<group>"; };
+		F843988B6C2B28A7AC48F4B81CDC2AB6 /* Pods-HtLocalChatClientTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HtLocalChatClientTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FF811042BB4C553BFE93CEAC1F229661 /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
+		FFF99BC1D4A7E100FB3032EC6C2D7EB4 /* RTCVideoTrack.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RTCVideoTrack.h; path = WebRTC.framework/Headers/RTCVideoTrack.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		35A398F6CC37A8D8E469498B848E286F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5151BB7E46C617221C89EBB69ACF334F /* CoreGraphics.framework in Frameworks */,
+				3DFBB3DE642AEE54677127A96C0773F6 /* Foundation.framework in Frameworks */,
+				BF1D85A29FBA0AFA37DCACDCBAFC241C /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73EDCCE02D9536A6E6AD00154B166BFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				736463C7BAEC936E2EFB4435AEB93DFA /* CFNetwork.framework in Frameworks */,
+				02CB9EDB7F6D7B1B6FA0119E732F5ADF /* Foundation.framework in Frameworks */,
+				09DCAE72CADB3D5CDAEE45447554D05C /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		970961E22AAB04042E16BF8DF9CBC618 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06EEE6291B0F7A4D920FFDFED8EC964F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0EB14D5A3DC5A091792D21C206B1FBC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4247E576E4A315414A1FEC4BC9960A93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4107842CE664C0692622E5E0E0C8CB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9146D9F88E9974001D2885BB00055BDB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B8D7CB963DE0125B84FC073D3ABEAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F17DF4932C1ACC0F8F89D1B7498BD25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12E2B31075C29AE801A2934B90BDE555 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D92B4D68FA6DAFCB259E9A4BC48A899 /* SnapKit.modulemap */,
+				F01F82F047C30BEE6385A47490EFE3E0 /* SnapKit.xcconfig */,
+				FF811042BB4C553BFE93CEAC1F229661 /* SnapKit-dummy.m */,
+				DB313C2674DD061B0F41ADB773D7EFFC /* SnapKit-Info.plist */,
+				285BC7487296B634FDAFDDAEEE8A2076 /* SnapKit-prefix.pch */,
+				F51C0D40DDCA33E41392F51C4009EA5D /* SnapKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SnapKit";
+			sourceTree = "<group>";
+		};
+		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B334AC875393871A13CE8DD609444738 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		264A9586536E309239BD187C898F4F64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C6BB4E0AF51FAB57A6CD5CB6978BA4CD /* WebRTC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3013606575F1718ABFD8FC2B5B2DBC69 /* Pods-HtLocalChatClient */ = {
+			isa = PBXGroup;
+			children = (
+				C5B1A4A7C0929D75E7479DF8A84FB239 /* Pods-HtLocalChatClient.modulemap */,
+				A7216D4507220A5EFC27E7F5BCB0F40C /* Pods-HtLocalChatClient-acknowledgements.markdown */,
+				6C389A8E163F155CEAEA30691F8EAAEA /* Pods-HtLocalChatClient-acknowledgements.plist */,
+				5844391A47A2934A98F90D023334A10A /* Pods-HtLocalChatClient-dummy.m */,
+				DAEAC146331C54D05D1ACBB5B3E7E39A /* Pods-HtLocalChatClient-frameworks.sh */,
+				5625E0B8F5CFCF0DA9FE8A88A38C289A /* Pods-HtLocalChatClient-Info.plist */,
+				6118467BF412793655DC6571F08A1936 /* Pods-HtLocalChatClient-umbrella.h */,
+				0A590EF448B33A3E14AB5E39AA37B01A /* Pods-HtLocalChatClient.debug.xcconfig */,
+				2A0E30F654A1EF7E056C66CE6DC975C1 /* Pods-HtLocalChatClient.release.xcconfig */,
+			);
+			name = "Pods-HtLocalChatClient";
+			path = "Target Support Files/Pods-HtLocalChatClient";
+			sourceTree = "<group>";
+		};
+		54F32BD07AA4F44B0D6C5CCC8FBCB606 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				D05E4652C048EECE9FCBA22EC1B89BF8 /* Constraint.swift */,
+				801C3CA4C55A64FC633CDD029AD214CC /* ConstraintAttributes.swift */,
+				C0CFFD38A14D45F2B65F114CBD7E2D31 /* ConstraintConfig.swift */,
+				67F57273112DFD9E3E2EBB05992A44BF /* ConstraintConstantTarget.swift */,
+				C4B0B29D6F1991272416FEC9022F3291 /* ConstraintDescription.swift */,
+				39570F1D5A4AFF4E3B8C0081ABBAC212 /* ConstraintDSL.swift */,
+				0FE764D9E028FC1CFACB4FF1A4EAF090 /* ConstraintInsets.swift */,
+				F4F467178C61006BE0D47B64417A6A67 /* ConstraintInsetTarget.swift */,
+				17DFCDAD188EA370AA52ED64ABACB959 /* ConstraintItem.swift */,
+				7664E46A1F9A691DAE2C151E61A8D2C6 /* ConstraintLayoutGuide.swift */,
+				959F1B3B228CE22EDDEB4580D1DBA893 /* ConstraintLayoutGuide+Extensions.swift */,
+				413C1F4AF8B0B64B22AECFA8FA65523F /* ConstraintLayoutGuideDSL.swift */,
+				C4CF7036CBCAF2F30469526420F19022 /* ConstraintLayoutSupport.swift */,
+				3B8538AE61381CC6C84D56CBF573262A /* ConstraintLayoutSupportDSL.swift */,
+				49AAE36D29B64AE31B68A9322A9B2546 /* ConstraintMaker.swift */,
+				0CB0C6FEAF4678F98712E7A869B63E7D /* ConstraintMakerEditable.swift */,
+				B28BA2A0DFFC32A6232A28E650C662A3 /* ConstraintMakerExtendable.swift */,
+				A64B08DFD06B5CD63D4D6D91E68D08CF /* ConstraintMakerFinalizable.swift */,
+				F4D964E78385665A5CEB1B5226BB7FCC /* ConstraintMakerPriortizable.swift */,
+				445FADFECEDB22390550804C04954A29 /* ConstraintMakerRelatable.swift */,
+				6EC5FD8D6CE3E8A48E8827C111B7C35E /* ConstraintMultiplierTarget.swift */,
+				C9FAD9E84AAF802A2461FA9EA2D0BE22 /* ConstraintOffsetTarget.swift */,
+				1576047EA666CFC3D67CDF97C6D253CE /* ConstraintPriority.swift */,
+				A4D04C70E42D99C146FD041304778DC9 /* ConstraintPriorityTarget.swift */,
+				85BEB665AD9DB37B0FB212048E993632 /* ConstraintRelatableTarget.swift */,
+				8124A63CB0A224BE38798972B53C84D4 /* ConstraintRelation.swift */,
+				65E5144C3F3522058EC089366AB4EC07 /* ConstraintView.swift */,
+				7216D805779BEAE81B352F36319436ED /* ConstraintView+Extensions.swift */,
+				4EA04BAB1A8317C2E6BB8283F3AAA3AC /* ConstraintViewDSL.swift */,
+				E2D64C0334FCD8B649A2AEC23D420EEE /* Debugging.swift */,
+				C27274BC314A171AAC9FC13DC06893BE /* LayoutConstraint.swift */,
+				5EA79A215E6927A4D9D362449729BD8E /* LayoutConstraintItem.swift */,
+				4ED3483DB04DF5B38AC5B50C59454334 /* Typealiases.swift */,
+				DB46FB0CAB861E79F1A88ED544A8CB49 /* UILayoutSupport+Extensions.swift */,
+				12E2B31075C29AE801A2934B90BDE555 /* Support Files */,
+			);
+			name = SnapKit;
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		69B9B89D1F04D4FC8A97F0A3F67CB052 /* Pods-HtLocalChatClientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C06E6199066EAA261B2369B6D2529745 /* Pods-HtLocalChatClientUITests.modulemap */,
+				F6869AA4BBE310125923B37CA88FCB44 /* Pods-HtLocalChatClientUITests-acknowledgements.markdown */,
+				5FD0C441F2D1B2F38104916AE74C65BD /* Pods-HtLocalChatClientUITests-acknowledgements.plist */,
+				058E5933CC78493FD1452FEB9C152417 /* Pods-HtLocalChatClientUITests-dummy.m */,
+				7A64DA3AA22FE241D1C6430A7045736A /* Pods-HtLocalChatClientUITests-Info.plist */,
+				0B964E36DB476B339F330B10BB27C5D7 /* Pods-HtLocalChatClientUITests-umbrella.h */,
+				3A3AE60DBC6AEF77B6E5DCE05E6936B0 /* Pods-HtLocalChatClientUITests.debug.xcconfig */,
+				D99D032A33F46C6296BA58956D448B8B /* Pods-HtLocalChatClientUITests.release.xcconfig */,
+			);
+			name = "Pods-HtLocalChatClientUITests";
+			path = "Target Support Files/Pods-HtLocalChatClientUITests";
+			sourceTree = "<group>";
+		};
+		726B4DFDE3B94F3645ABC4171DA88F3A /* Pods-HtLocalChatClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				862AE427A9172CC563806E741530C1B1 /* Pods-HtLocalChatClientTests.modulemap */,
+				F843988B6C2B28A7AC48F4B81CDC2AB6 /* Pods-HtLocalChatClientTests-acknowledgements.markdown */,
+				0597AB655AD6A0B142F8C48BB833F163 /* Pods-HtLocalChatClientTests-acknowledgements.plist */,
+				0E32893F16EE85FC5D8F1A7D34CAFE62 /* Pods-HtLocalChatClientTests-dummy.m */,
+				C07649C2B2879D3E616B4A3B93B2A516 /* Pods-HtLocalChatClientTests-Info.plist */,
+				1C3B9B75C9BF6023075A89C624C57E6F /* Pods-HtLocalChatClientTests-umbrella.h */,
+				7AFC6FD4F95B4AD5D83264936930EB66 /* Pods-HtLocalChatClientTests.debug.xcconfig */,
+				3518291C625B3B508ECA8B6070E75101 /* Pods-HtLocalChatClientTests.release.xcconfig */,
+			);
+			name = "Pods-HtLocalChatClientTests";
+			path = "Target Support Files/Pods-HtLocalChatClientTests";
+			sourceTree = "<group>";
+		};
+		7AFB79F64C6B053726393BE63B4A581B /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				4DF7FF8BD4171B67374BC0080AC6F146 /* MBProgressHUD.h */,
+				579C923BBB8147129187703B2494FCAA /* MBProgressHUD.m */,
+				AD48BFA57585C84730C3B27DC00FE9E0 /* Support Files */,
+			);
+			name = MBProgressHUD;
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
+				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
+				C0F08548E177C48DD8E048DD2C2EBC17 /* Pods */,
+				E46DD97711DF70063F1247B82969BCE9 /* Products */,
+				8A623CF6547450955E2F8C40E26C473C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F27D587556DDE23581F30BA192AEF30 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				EAB71D3BCA70D32C3C8C2F0E4DEB8C1B /* GCDAsyncSocket.h */,
+				14C38C968DF31806E03E61B260E3B665 /* GCDAsyncSocket.m */,
+				F451C6C6BED1EB27D6F3AB94E3E247E6 /* GCDAsyncUdpSocket.h */,
+				8068D78563C9DF2B6E3AC20339DAA386 /* GCDAsyncUdpSocket.m */,
+				B302DC03A5B7C0786096ED20C5970AF6 /* Support Files */,
+			);
+			name = CocoaAsyncSocket;
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		7FD5114EBF9559AED16E79016EA5CDD1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3C7B2EF687C1CED3DBDE3C28FD704D8 /* WebRTC.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/WebRTC";
+			sourceTree = "<group>";
+		};
+		8A623CF6547450955E2F8C40E26C473C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3013606575F1718ABFD8FC2B5B2DBC69 /* Pods-HtLocalChatClient */,
+				726B4DFDE3B94F3645ABC4171DA88F3A /* Pods-HtLocalChatClientTests */,
+				69B9B89D1F04D4FC8A97F0A3F67CB052 /* Pods-HtLocalChatClientUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AD48BFA57585C84730C3B27DC00FE9E0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F1B1DB7F08452D3ED938BCD37241B3E /* MBProgressHUD.modulemap */,
+				4BBB0D51A22FF47F3820A8FD17C88651 /* MBProgressHUD.xcconfig */,
+				7E26A7DE7C26F4AD2A9940F6AAF620D3 /* MBProgressHUD-dummy.m */,
+				D94F90C086E3C0BA0CC1ECC79B34DE3F /* MBProgressHUD-Info.plist */,
+				CB46E1BFC6F377EEAAD54547112C0019 /* MBProgressHUD-prefix.pch */,
+				A69F128F6D6F9BA08FF312487E79E7DD /* MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		B302DC03A5B7C0786096ED20C5970AF6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				50946C3121AEE8086B940EE52CEF688D /* CocoaAsyncSocket.modulemap */,
+				DEFCBE552E297F3394FF763EF6788FDA /* CocoaAsyncSocket.xcconfig */,
+				A847E14ACF9C0DA91DA69DA4F5A8C663 /* CocoaAsyncSocket-dummy.m */,
+				7B8AB786F9CD0CE928DA39DABDA005DA /* CocoaAsyncSocket-Info.plist */,
+				5931A51A551AF0B57184FAB1CF166A05 /* CocoaAsyncSocket-prefix.pch */,
+				8EB40875EE8DF0A4B96A7BDFA8FE3FA6 /* CocoaAsyncSocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+		B334AC875393871A13CE8DD609444738 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DCF84748F1A09C419B1BCA4D6D3950E1 /* CFNetwork.framework */,
+				3682365C691C790727DA03B444A5EDCD /* CoreGraphics.framework */,
+				74F24851033785A8C53602E3BE207416 /* Foundation.framework */,
+				4543FBD39E7DC8F8F6A17F4FAFD11ECB /* QuartzCore.framework */,
+				7B61385E6C5C6F51EF1DD9DC778058A3 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		B3C54D2DF24702674FF4CABDBAED5D08 /* WebRTC */ = {
+			isa = PBXGroup;
+			children = (
+				AD90447C2D49BBC370B921F54A0D49C4 /* RTCAudioSession.h */,
+				1DE3B7AFCCB5DA0183D909E7B0D8DB8E /* RTCAudioSessionConfiguration.h */,
+				97624ACE5FA7681157C161AC9C761A23 /* RTCAudioSource.h */,
+				32F925762806A664B41524BEAB087040 /* RTCAudioTrack.h */,
+				5DE400DD0BCD48E89C80390B37B2A557 /* RTCAVFoundationVideoSource.h */,
+				EF2559FA7BF7C2C9D9F583950725203B /* RTCCameraPreviewView.h */,
+				594B34F9CB03BDC364E0A5E73733FACF /* RTCCameraVideoCapturer.h */,
+				435B35F90E03E455F3E2694EFD1B5896 /* RTCConfiguration.h */,
+				9464CD5C76DDB86365A54914BE1E5D61 /* RTCDataChannel.h */,
+				B7A385245C599BF2369BCD250A54D996 /* RTCDataChannelConfiguration.h */,
+				177107AE8B6F5AA1920F17ED9B8E1B9D /* RTCDispatcher.h */,
+				C479E944DA06A1A4A0444C32C88DE4C3 /* RTCEAGLVideoView.h */,
+				F183586FACB1EBD3452851A79712C47E /* RTCFieldTrials.h */,
+				ACEA3F4625E40D916139EB0E605382B5 /* RTCFileLogger.h */,
+				E39BE7EF8F693FB78B7E84234ED184B9 /* RTCIceCandidate.h */,
+				8F1556D2E22A549ED89546E9CC24DDAE /* RTCIceServer.h */,
+				64EB414AC84945DBCEBB5DC9420A083B /* RTCIntervalRange.h */,
+				7C7E0531399263667E8DD560E5ACE674 /* RTCLegacyStatsReport.h */,
+				9918825C79EB91983AFBDA080EB46220 /* RTCLogging.h */,
+				C78A358D17390E17D9A09B4D50865606 /* RTCMacros.h */,
+				6056FE61DB49499EBE249DC31A635259 /* RTCMediaConstraints.h */,
+				79CA26D565D2A88E2AD229503FC0A069 /* RTCMediaSource.h */,
+				B5B91D7D3F3EC922086A41A07F3173EC /* RTCMediaStream.h */,
+				F6BE8824B000DAEEBC272FEB1A5697EE /* RTCMediaStreamTrack.h */,
+				9F8D2280D5B1F5767DC51C80291C1C75 /* RTCMetrics.h */,
+				6F896515ECC25B5BAC888EA30FA1BC08 /* RTCMetricsSampleInfo.h */,
+				563EA855313E174862D508CBC81C4E90 /* RTCMTLVideoView.h */,
+				64C0D0268CBDD4BA0DB23416596928A6 /* RTCPeerConnection.h */,
+				F27BC85F2FA4663177FEF0F89F7B9AA8 /* RTCPeerConnectionFactory.h */,
+				917C7D0F3B307D23CA59AA1F30AB8035 /* RTCRtpCodecParameters.h */,
+				F23271839EAFAFF1872BBF7A1B34942C /* RTCRtpEncodingParameters.h */,
+				A64CE548185CBCBC91E0F03E76A94998 /* RTCRtpParameters.h */,
+				4978646629C137D8354242F9399B0430 /* RTCRtpReceiver.h */,
+				317B33C8085FD5059FB307F47532B049 /* RTCRtpSender.h */,
+				A38D6A5F024EBC7D18018EBEE36644DA /* RTCSessionDescription.h */,
+				4D4E0B4CFCA13B0B8287D5EEFECE0DEE /* RTCSSLAdapter.h */,
+				332A4BBC30C509CDFDA8ED7B945FB183 /* RTCTracing.h */,
+				3C8449ED4021A143D7DE18A611A3F883 /* RTCVideoCapturer.h */,
+				D6A293DD7B8311ACB86DAD97D2C7DB05 /* RTCVideoCodec.h */,
+				4C5944C06D51A78EC47554B5BD538811 /* RTCVideoCodecFactory.h */,
+				960C5CBF7AF5D6B823CA78ADD27EA5DF /* RTCVideoCodecH264.h */,
+				4AACF99C5B8455F27F426AB2EBF323DF /* RTCVideoDecoderVP8.h */,
+				777F3451150708E95B49C2D1A66577FA /* RTCVideoDecoderVP9.h */,
+				71370EA27F71C7BEC56CE4D04078D2D2 /* RTCVideoEncoderVP8.h */,
+				59D87D44A4CD20648907AA30D3255238 /* RTCVideoEncoderVP9.h */,
+				AB02B20C259FDD7C3F524F12C875F75D /* RTCVideoFrame.h */,
+				0BCC96EC9E3CF9D91149EA0ED605C5CB /* RTCVideoFrameBuffer.h */,
+				8248212E0E26667680760C8043A790E3 /* RTCVideoRenderer.h */,
+				ADAD3CB4C6B051DF7DF714E6EFBDD2EA /* RTCVideoSource.h */,
+				FFF99BC1D4A7E100FB3032EC6C2D7EB4 /* RTCVideoTrack.h */,
+				575A1DC21F9DCD3686700DA412EF03C8 /* RTCVideoViewShading.h */,
+				0F8BA168A16CB27C93D38ADA832A1291 /* UIDevice+RTCDevice.h */,
+				850DAC14944B949522ACDB0A7B613F44 /* WebRTC.h */,
+				264A9586536E309239BD187C898F4F64 /* Frameworks */,
+				7FD5114EBF9559AED16E79016EA5CDD1 /* Support Files */,
+			);
+			name = WebRTC;
+			path = WebRTC;
+			sourceTree = "<group>";
+		};
+		C0F08548E177C48DD8E048DD2C2EBC17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F27D587556DDE23581F30BA192AEF30 /* CocoaAsyncSocket */,
+				7AFB79F64C6B053726393BE63B4A581B /* MBProgressHUD */,
+				54F32BD07AA4F44B0D6C5CCC8FBCB606 /* SnapKit */,
+				B3C54D2DF24702674FF4CABDBAED5D08 /* WebRTC */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E46DD97711DF70063F1247B82969BCE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FAA56388E3DA0ED97001796C97A559E /* CocoaAsyncSocket.framework */,
+				E1791FD7C9C798E0433E23DAD99585D4 /* MBProgressHUD.framework */,
+				989DFB9FE589535469014C1A166F75E7 /* Pods_HtLocalChatClient.framework */,
+				9AA1D39C1D56F44CF41C96FA518812C0 /* Pods_HtLocalChatClientTests.framework */,
+				D0D0DBB61C85D2EDB2EA858584F650BE /* Pods_HtLocalChatClientUITests.framework */,
+				25AA60BEE394C4E796BEE54EB9A4E16B /* SnapKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		292DDBE2D0B2F68D0F45563CA45F8D4D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD9294CD5ACD772286BBC1CD783DCAA7 /* Pods-HtLocalChatClientTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CE17C32A4504B751C3375AA3458D828 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C31470E92B1A691AC3D3D55A127DCBF0 /* MBProgressHUD-umbrella.h in Headers */,
+				D966EB561A0A6A10BAF414F0B952E95E /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88848FE19197FD5943FB643D652DFAEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE81A088AFCB2058F925EFEA8580AF6E /* Pods-HtLocalChatClientUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94C7D8CE65956A3E7283408C2F43726A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				443E4CFA6433019D0EDD192E08866F50 /* SnapKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E581B1CCAD28F4F856768A851F1249F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3464F5E7DF08DD3F8F5CFF5FD50FDA0C /* Pods-HtLocalChatClient-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD5BD758EC28E0FD3E8BC2A2CB93A37B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				276F082DA0A032AB6F2998B3A8E2FA96 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				84D92FC60D98C077AB3A6D56AEBE8FEB /* GCDAsyncSocket.h in Headers */,
+				946B8DE90A7C6B3872C82AA2AF240118 /* GCDAsyncUdpSocket.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		015322119EF809F0A22041013A659D35 /* Pods-HtLocalChatClientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9EDDEFF9386AD559F4668B1C92A67DE /* Build configuration list for PBXNativeTarget "Pods-HtLocalChatClientUITests" */;
+			buildPhases = (
+				88848FE19197FD5943FB643D652DFAEF /* Headers */,
+				FC549CE89F5EF1B093C2B918AFDD2DC7 /* Sources */,
+				C0EB14D5A3DC5A091792D21C206B1FBC /* Frameworks */,
+				9DE20064E43CFFBF90B896AAED5C2B53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91E62B7F785133F502F4BFBDFEA48FFA /* PBXTargetDependency */,
+			);
+			name = "Pods-HtLocalChatClientUITests";
+			productName = "Pods-HtLocalChatClientUITests";
+			productReference = D0D0DBB61C85D2EDB2EA858584F650BE /* Pods_HtLocalChatClientUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		594E89B63DD39237AE073248DBF7DCA5 /* Pods-HtLocalChatClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03097C56774E2FE83BC32A5D7947ECE9 /* Build configuration list for PBXNativeTarget "Pods-HtLocalChatClientTests" */;
+			buildPhases = (
+				292DDBE2D0B2F68D0F45563CA45F8D4D /* Headers */,
+				CEBB5B9B94E6DB34248E5A89976621C7 /* Sources */,
+				970961E22AAB04042E16BF8DF9CBC618 /* Frameworks */,
+				A4DA530C161AAEAE0FBB3E35AF9EE10A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8985319819A77E8A92DE48677B9FDBE /* PBXTargetDependency */,
+			);
+			name = "Pods-HtLocalChatClientTests";
+			productName = "Pods-HtLocalChatClientTests";
+			productReference = 9AA1D39C1D56F44CF41C96FA518812C0 /* Pods_HtLocalChatClientTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8849BDC5FE50F23D2D00B456D85BA88B /* SnapKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 23054217BFAB52F4AEB15487242235BB /* Build configuration list for PBXNativeTarget "SnapKit" */;
+			buildPhases = (
+				94C7D8CE65956A3E7283408C2F43726A /* Headers */,
+				0CF22EDD3A945F8413153046866E45B5 /* Sources */,
+				E4107842CE664C0692622E5E0E0C8CB2 /* Frameworks */,
+				B8670A383958DB65914194B970DF92B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnapKit;
+			productName = SnapKit;
+			productReference = 25AA60BEE394C4E796BEE54EB9A4E16B /* SnapKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		91EECFB084FE688E06AC54C92C821BF6 /* Pods-HtLocalChatClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADA29D20A6E75BE34211DCF4ACEFEE29 /* Build configuration list for PBXNativeTarget "Pods-HtLocalChatClient" */;
+			buildPhases = (
+				E581B1CCAD28F4F856768A851F1249F3 /* Headers */,
+				68F9EFE0BC36A0171FEDC5F3FFF0FDAD /* Sources */,
+				F9B8D7CB963DE0125B84FC073D3ABEAD /* Frameworks */,
+				7222F9E891796ECAC534CB70767DB76A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2A6460BB006B31BFECBCFDD0A5227507 /* PBXTargetDependency */,
+				26667309311EEF32E09EAD9105098E2B /* PBXTargetDependency */,
+				3D0D78B23AE114B4DA84C2A74272F7D0 /* PBXTargetDependency */,
+				6D91E08C392E0336DBB15CA4106EA255 /* PBXTargetDependency */,
+			);
+			name = "Pods-HtLocalChatClient";
+			productName = "Pods-HtLocalChatClient";
+			productReference = 989DFB9FE589535469014C1A166F75E7 /* Pods_HtLocalChatClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AD408BAB384B6DDA88A50A16FB158B66 /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09600571F63852ACA3B7A23B4729B6A4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				5CE17C32A4504B751C3375AA3458D828 /* Headers */,
+				88F228B332626246A6113EBE81AB9792 /* Sources */,
+				35A398F6CC37A8D8E469498B848E286F /* Frameworks */,
+				96C60439BF31F7D396AAA2AAD2622A98 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = E1791FD7C9C798E0433E23DAD99585D4 /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB4B18BC646AD400FE52808E62839AB5 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
+			buildPhases = (
+				FD5BD758EC28E0FD3E8BC2A2CB93A37B /* Headers */,
+				B9D0B0602F04A8CCC471C2F11D11E027 /* Sources */,
+				73EDCCE02D9536A6E6AD00154B166BFD /* Frameworks */,
+				3337958E133C08BB64CFD881FEC29B2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 3FAA56388E3DA0ED97001796C97A559E /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E46DD97711DF70063F1247B82969BCE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */,
+				AD408BAB384B6DDA88A50A16FB158B66 /* MBProgressHUD */,
+				91EECFB084FE688E06AC54C92C821BF6 /* Pods-HtLocalChatClient */,
+				594E89B63DD39237AE073248DBF7DCA5 /* Pods-HtLocalChatClientTests */,
+				015322119EF809F0A22041013A659D35 /* Pods-HtLocalChatClientUITests */,
+				8849BDC5FE50F23D2D00B456D85BA88B /* SnapKit */,
+				F8E4A6967D47CAE307D28F88CE79F267 /* WebRTC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3337958E133C08BB64CFD881FEC29B2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7222F9E891796ECAC534CB70767DB76A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96C60439BF31F7D396AAA2AAD2622A98 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DE20064E43CFFBF90B896AAED5C2B53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4DA530C161AAEAE0FBB3E35AF9EE10A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8670A383958DB65914194B970DF92B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CF22EDD3A945F8413153046866E45B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEE3DE6D6C043DABF234DB08F58816E6 /* Constraint.swift in Sources */,
+				16A1C1D02E81BC979D872A161707066F /* ConstraintAttributes.swift in Sources */,
+				535AB9D05452BA07AB2132B338FD29E8 /* ConstraintConfig.swift in Sources */,
+				CD6E2AA218EB7B80E55E53EE74401963 /* ConstraintConstantTarget.swift in Sources */,
+				AC8EDE451874625FCE26F3ADFF94F3B5 /* ConstraintDescription.swift in Sources */,
+				F26D269516ED36CD4FC7560A3EBF591F /* ConstraintDSL.swift in Sources */,
+				44BDB0E65FEDA52D48282F5FB038E8E1 /* ConstraintInsets.swift in Sources */,
+				06A3855C9FD3289DD228E39CFF335CD8 /* ConstraintInsetTarget.swift in Sources */,
+				1CB3796F161A46948538E70259AD5E91 /* ConstraintItem.swift in Sources */,
+				5FC6DD6098A4A64A713B33A88B143BFD /* ConstraintLayoutGuide+Extensions.swift in Sources */,
+				934E213E41F6BB472495FF468BE6E8B4 /* ConstraintLayoutGuide.swift in Sources */,
+				4E533656A9C5F376F981B55116CBC987 /* ConstraintLayoutGuideDSL.swift in Sources */,
+				5F50FAF1A6C1058541CBAFEF0C05B4EE /* ConstraintLayoutSupport.swift in Sources */,
+				40AD22ADD8578FE3CC713DEA8DB216B0 /* ConstraintLayoutSupportDSL.swift in Sources */,
+				621B52B4C849ABEB1E1386ECADE029E4 /* ConstraintMaker.swift in Sources */,
+				C15B34F9C5F734C5E7AA3F622BFDD6A6 /* ConstraintMakerEditable.swift in Sources */,
+				F83511F01C916995021C52FC74AB7D2A /* ConstraintMakerExtendable.swift in Sources */,
+				E1F5E6E6FFBCE2F8DC413365951819D8 /* ConstraintMakerFinalizable.swift in Sources */,
+				ADBC1556ECCF5CF23D10ECC9361E1581 /* ConstraintMakerPriortizable.swift in Sources */,
+				8F370F9E019AE94D16E082939375CC59 /* ConstraintMakerRelatable.swift in Sources */,
+				B06BA7A1D2AA2DAA8D7B7FA9843F2210 /* ConstraintMultiplierTarget.swift in Sources */,
+				C5BF5181F4227A5BE22D3B941F1A8D92 /* ConstraintOffsetTarget.swift in Sources */,
+				2D3534BFC37FBEA63F4B33542F7E2A97 /* ConstraintPriority.swift in Sources */,
+				0826A744790A6199B9CC4592E7B964E3 /* ConstraintPriorityTarget.swift in Sources */,
+				BD92CEA93C4A82DC82B4B52264DAF07B /* ConstraintRelatableTarget.swift in Sources */,
+				78DC5DD0BDCCEBF845F4020E67B98A16 /* ConstraintRelation.swift in Sources */,
+				AFD46869C50E29A93135A54B57A531F8 /* ConstraintView+Extensions.swift in Sources */,
+				249915C611A65AE65C9F93ADC9C282BC /* ConstraintView.swift in Sources */,
+				1BD1BBFCE18DA90BEE46B9EE01854ED6 /* ConstraintViewDSL.swift in Sources */,
+				ED760680ABD29889FB4FD3BD833BF948 /* Debugging.swift in Sources */,
+				E9E39F50F9D9DB9B3C27914819078FB0 /* LayoutConstraint.swift in Sources */,
+				A9FD56E2B1C47178900F3623ED185460 /* LayoutConstraintItem.swift in Sources */,
+				766756A684C1547EABBED14345FEBCCD /* SnapKit-dummy.m in Sources */,
+				04B8788E00E9C1849BCA2B3C166066D6 /* Typealiases.swift in Sources */,
+				DBD0C2EE88FF45CE7C30ED419B482D6B /* UILayoutSupport+Extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F9EFE0BC36A0171FEDC5F3FFF0FDAD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				732CB622FA80ED1D254B281044AAF61B /* Pods-HtLocalChatClient-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88F228B332626246A6113EBE81AB9792 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEB4A455551D7B917E1AD4B0A1A964FF /* MBProgressHUD-dummy.m in Sources */,
+				4BD3B1D588017EA43F3E98563319DC19 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D0B0602F04A8CCC471C2F11D11E027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB100FF9229539CA4094551779BF2BE /* CocoaAsyncSocket-dummy.m in Sources */,
+				AC166C66311BCAAAD1D9289A80E51CCF /* GCDAsyncSocket.m in Sources */,
+				30169A0026017D898DAC180CC3218F79 /* GCDAsyncUdpSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEBB5B9B94E6DB34248E5A89976621C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E834E121421E60B1E164F7C19F19E4 /* Pods-HtLocalChatClientTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC549CE89F5EF1B093C2B918AFDD2DC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BB2F41822954D83EE325F53186CEC6 /* Pods-HtLocalChatClientUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26667309311EEF32E09EAD9105098E2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = AD408BAB384B6DDA88A50A16FB158B66 /* MBProgressHUD */;
+			targetProxy = C6370E5A4A540AA942CC06D986AE7519 /* PBXContainerItemProxy */;
+		};
+		2A6460BB006B31BFECBCFDD0A5227507 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = EB9F16A11CCB7B75DFD4C14783C83019 /* CocoaAsyncSocket */;
+			targetProxy = C04F77DF8C92D31FF29DC84DDFE83022 /* PBXContainerItemProxy */;
+		};
+		3D0D78B23AE114B4DA84C2A74272F7D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 8849BDC5FE50F23D2D00B456D85BA88B /* SnapKit */;
+			targetProxy = 6D5FC5DE4C2E5584071D2F4F5F841C52 /* PBXContainerItemProxy */;
+		};
+		6D91E08C392E0336DBB15CA4106EA255 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WebRTC;
+			target = F8E4A6967D47CAE307D28F88CE79F267 /* WebRTC */;
+			targetProxy = FAF637226CC654E9D7CBA2620C6E9291 /* PBXContainerItemProxy */;
+		};
+		91E62B7F785133F502F4BFBDFEA48FFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HtLocalChatClient";
+			target = 91EECFB084FE688E06AC54C92C821BF6 /* Pods-HtLocalChatClient */;
+			targetProxy = C790F0186D9078EBE7798B8CB2530472 /* PBXContainerItemProxy */;
+		};
+		D8985319819A77E8A92DE48677B9FDBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-HtLocalChatClient";
+			target = 91EECFB084FE688E06AC54C92C821BF6 /* Pods-HtLocalChatClient */;
+			targetProxy = 3FD6993CE0D804F3D5F53B23D344144A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		105F90BF10F8688032FB629A9DA204FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1A17A841FC7E39113506CA67A58F9E9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F01F82F047C30BEE6385A47490EFE3E0 /* SnapKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4523AD7643ED91A440EAEA20025EC111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		47FCC87AF489C67A9202E04F2BB7BBC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEFCBE552E297F3394FF763EF6788FDA /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4C96F32297DEFC0DC590D07ADBB9D77D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C7B2EF687C1CED3DBDE3C28FD704D8 /* WebRTC.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		519C22F08E17D26F072131C9AE3A001A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEFCBE552E297F3394FF763EF6788FDA /* CocoaAsyncSocket.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6003700074142C07C387364FBE778AFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F01F82F047C30BEE6385A47490EFE3E0 /* SnapKit.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A1A7163009D002DC5A3EA8A61ADC9BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A590EF448B33A3E14AB5E39AA37B01A /* Pods-HtLocalChatClient.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HtLocalChatClient/Pods-HtLocalChatClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HtLocalChatClient/Pods-HtLocalChatClient.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		79D2F02FDE0A876847F118325B08B7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3C7B2EF687C1CED3DBDE3C28FD704D8 /* WebRTC.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EA10786F00F376FF491FD826D311631 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A0E30F654A1EF7E056C66CE6DC975C1 /* Pods-HtLocalChatClient.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HtLocalChatClient/Pods-HtLocalChatClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HtLocalChatClient/Pods-HtLocalChatClient.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B6EBF56D431879FC2C9F0AF696DE6D0F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BBB0D51A22FF47F3820A8FD17C88651 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B759A13FCD74866131D8410066F17E8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A3AE60DBC6AEF77B6E5DCE05E6936B0 /* Pods-HtLocalChatClientUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HtLocalChatClientUITests/Pods-HtLocalChatClientUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HtLocalChatClientUITests/Pods-HtLocalChatClientUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BB510DD89A8DD09C0152A09E7465B153 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D99D032A33F46C6296BA58956D448B8B /* Pods-HtLocalChatClientUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HtLocalChatClientUITests/Pods-HtLocalChatClientUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HtLocalChatClientUITests/Pods-HtLocalChatClientUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5777C7B3A79F791380E94AEEC4C8C4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BBB0D51A22FF47F3820A8FD17C88651 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = MBProgressHUD;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2BFAA18996CD1FB07EEA7F71939EC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFC6FD4F95B4AD5D83264936930EB66 /* Pods-HtLocalChatClientTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HtLocalChatClientTests/Pods-HtLocalChatClientTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HtLocalChatClientTests/Pods-HtLocalChatClientTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EBB2B0CF50D3F74528B1C7F99E3B01F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3518291C625B3B508ECA8B6070E75101 /* Pods-HtLocalChatClientTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HtLocalChatClientTests/Pods-HtLocalChatClientTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HtLocalChatClientTests/Pods-HtLocalChatClientTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03097C56774E2FE83BC32A5D7947ECE9 /* Build configuration list for PBXNativeTarget "Pods-HtLocalChatClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2BFAA18996CD1FB07EEA7F71939EC84 /* Debug */,
+				EBB2B0CF50D3F74528B1C7F99E3B01F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09600571F63852ACA3B7A23B4729B6A4 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6EBF56D431879FC2C9F0AF696DE6D0F /* Debug */,
+				D5777C7B3A79F791380E94AEEC4C8C4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C77280B0DDEB1E12A5B3F534E7A2F89 /* Build configuration list for PBXAggregateTarget "WebRTC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C96F32297DEFC0DC590D07ADBB9D77D /* Debug */,
+				79D2F02FDE0A876847F118325B08B7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23054217BFAB52F4AEB15487242235BB /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6003700074142C07C387364FBE778AFC /* Debug */,
+				1A17A841FC7E39113506CA67A58F9E9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				105F90BF10F8688032FB629A9DA204FD /* Debug */,
+				4523AD7643ED91A440EAEA20025EC111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADA29D20A6E75BE34211DCF4ACEFEE29 /* Build configuration list for PBXNativeTarget "Pods-HtLocalChatClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A1A7163009D002DC5A3EA8A61ADC9BF /* Debug */,
+				7EA10786F00F376FF491FD826D311631 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB4B18BC646AD400FE52808E62839AB5 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47FCC87AF489C67A9202E04F2BB7BBC7 /* Debug */,
+				519C22F08E17D26F072131C9AE3A001A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9EDDEFF9386AD559F4668B1C92A67DE /* Build configuration list for PBXNativeTarget "Pods-HtLocalChatClientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B759A13FCD74866131D8410066F17E8A /* Debug */,
+				BB510DD89A8DD09C0152A09E7465B153 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
