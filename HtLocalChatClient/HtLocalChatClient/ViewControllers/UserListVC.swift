@@ -30,22 +30,24 @@ class UserListVC: UIViewController {
             case StaticValue.MessageKey.userList:
                 self.dataSource = data as! [String]
                 self.table.reloadData()
-            case StaticValue.MessageKey.newPeer:
+            case StaticValue.MessageKey.newUser:
                 self.dataSource.append(data as! String)
                 self.table.reloadData()
             case StaticValue.MessageKey.called:     // 被呼叫
                 let dict = data as! Dictionary<String, String>
-                let fromUser = dict["fromUser"]
-                let alert = UIAlertController(title: nil, message: "\(fromUser!)请求通话", preferredStyle: .alert)
+                let caller = dict["caller"]
+                let alert = UIAlertController(title: nil, message: "\(caller!)请求通话", preferredStyle: .alert)
                 let action1 = UIAlertAction(title: "同意", style: .default, handler: { (action) in
-                    // 同意以后开始创建连接、本地视频流、offer并将offer发送给对方
+                    
                     SocketManager.shared.sendMessage(type: StaticValue.MessageKey.agree, data: data)
                     let videoVC = VideoChatVC(nibName: "VideoChatVC", bundle: nil)
-                    videoVC.user = fromUser!
+                    ht_print(message: caller!)
+                    videoVC.user = caller!
                     self.present(videoVC, animated: true, completion: nil)
                 })
                 let action2 = UIAlertAction(title: "拒绝", style: .destructive, handler: { (action) in
-                    
+                    // 同意以后开始创建连接、本地视频流、offer并将offer发送给对方
+//                    SocketManager.shared.sendMessage(type: StaticValue.MessageKey.agree, data: data)
                 })
                 alert.addAction(action1)
                 alert.addAction(action2)
@@ -75,6 +77,8 @@ extension UserListVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let videoVC = VideoChatVC(nibName: "VideoChatVC", bundle: nil)
         videoVC.user = dataSource[indexPath.row]
+        // 让服务器帮忙呼叫指定的人
+        SocketManager.shared.sendMessage(type: StaticValue.MessageKey.call, data: ["caller": UserDefaults.standard.string(forKey: "name")!, "called": dataSource[indexPath.row]])
         present(videoVC, animated: true, completion: nil)
     }
 }

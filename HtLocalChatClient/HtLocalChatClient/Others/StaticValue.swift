@@ -13,6 +13,10 @@ public struct StaticValue {
     
     public struct MessageKey {
         static let none = ""
+        
+        /// 新用户连接上了
+        static let newUser = "newUser"
+        
         static let connected = "connected"
         /// 用户列表
         static let userList = "userList"

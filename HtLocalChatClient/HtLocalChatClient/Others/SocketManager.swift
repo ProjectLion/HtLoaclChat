@@ -107,11 +107,14 @@ extension SocketManager: GCDAsyncSocketDelegate {
 //        let strLength = dataToInt(withData: headData)
         let desc = String(data: data, encoding: .utf8)
         ht_print(message: "正文: \(desc!)")
-        let dict = try! JSONSerialization.jsonObject(with: data, options: .allowFragments) as? Dictionary<String, Any>
-        if let dic = dict {
-            DispatchQueue.main.async {
-                self.on(dic["type"] as! String, dic["data"]!)
-            }
+        var dic: Dictionary<String, Any> = [:]
+        do {
+            dic = try JSONSerialization.jsonObject(with: data, options: [.mutableLeaves, .allowFragments]) as! Dictionary<String, Any>
+        } catch let error {
+            ht_print(message: error)
+        }
+        DispatchQueue.main.async {
+            self.on(dic["type"] as! String, dic["data"]!)
         }
         // 监听服务器的消息
         socket!.readData(withTimeout: -1, tag: 1)
@@ -141,7 +144,8 @@ extension SocketManager {
             socket = GCDAsyncSocket(delegate: self, delegateQueue: delegateQueue, socketQueue: socketQueue)
         }
         do {
-            try socket!.connect(toHost: "192.168.2.247", onPort: 8848)
+            // 服务器地址。运行服务器项目可查看其IP地址
+            try socket!.connect(toHost: "192.168.2.139", onPort: 8848)
         } catch let error {
             ht_print(message: "连接失败, error: \(error)")
         }

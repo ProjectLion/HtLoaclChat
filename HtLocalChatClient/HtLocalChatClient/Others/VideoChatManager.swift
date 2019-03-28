@@ -112,12 +112,13 @@ extension VideoChatManager {
         if factory == nil {
             factory = RTCPeerConnectionFactory()
         }
-        localStream = factory.mediaStream(withStreamId: "mediaStreamID")
+        localStream = factory.mediaStream(withStreamId: "ARDAMS")
         
         HTPrivatePermission.getAudioPermission { (isHave) in
             if isHave {
                 // 音频追踪
                 let audioTrack = self.factory.audioTrack(withTrackId: "ARDAMSa0")
+                audioTrack.source.volume = 5
                 self.localStream.addAudioTrack(audioTrack)
             } else {
                 MBProgressHUD.ht_show(text: "没有麦克风权限", inView: UIApplication.shared.keyWindow!)
@@ -130,8 +131,8 @@ extension VideoChatManager {
                 videoSource.captureSession.outputs.first!.connections.first!.isVideoMirrored = true
                 // 切换瑟像头
                 //                videoSource.useBackCamera = true
-                let videoTrack = self.factory.videoTrack(with: videoSource, trackId: "AVAMSv0")        // RTCVideoTrack
-                
+                let videoTrack = self.factory.videoTrack(with: videoSource, trackId: "ARDAMSv0")        // RTCVideoTrack
+                ht_print(message: "摄像头状态: \(videoTrack.readyState)")
                 self.localStream.addVideoTrack(videoTrack)
                 // 将设置好的视频流回调出去
                 self.delegate.videoChat(manager: self, setLocalStream: self.localStream, userID: self.myID)
@@ -150,8 +151,10 @@ extension VideoChatManager {
     /// 根据内存中的ID创建连接
     private func createPeerConnections() {
         for item in connectionIDArr {       // 遍历id，根据id创建连接
-            let connection = creatPeerConnection(id: item)
-            creatOfferOfAnswer(connection: connection, id: item)
+            if item != UserDefaults.standard.string(forKey: "name")! {
+                let connection = creatPeerConnection(id: item)
+                creatOfferOfAnswer(connection: connection, id: item)
+            }
         }
     }
     
@@ -173,7 +176,15 @@ extension VideoChatManager {
         // 在回调里(RTCPeerConnectionDelegate)发送ice candidate给服务器
         let connection = factory.peerConnection(with: configuration, constraints: mediaConstraints, delegate: self)
         // 为所有连接添加上流（其实就是将本地的视频流发出去，让别人接收，会触发didAdd stream）
+        if localStream == nil {
+            creatLocalStream()
+        }
         connection.add(localStream)
+        // 创建数据通道
+        let dataChannelConfig = RTCDataChannelConfiguration()
+        dataChannelConfig.isOrdered = true
+        let dataChannel = connection.dataChannel(forLabel: "htDataChannel", configuration: dataChannelConfig)
+        dataChannel.delegate = self
         connectionDict[id] = connection     // 将创建好的连接保存起来
         connectionIDArr.append(id)
         return connection
@@ -191,7 +202,7 @@ extension VideoChatManager {
                         connection.setLocalDescription(sdp, completionHandler: {
                             if $0 == nil {
                                 //  发送sdp到服务器 即发送offer出去
-                                let dict: [String : Any] = ["type": sdp.type.rawValue, "sdp": sdp.sdp, "user": id]
+                                let dict: [String : Any] = ["type": sdp.type.rawValue, "sdp": sdp.sdp, "caller": UserDefaults.standard.string(forKey: "name")!, "called": id]
                                 SocketManager.shared.sendMessage(type: StaticValue.MessageKey.offer, data: dict)
                             }
                         })
@@ -279,7 +290,7 @@ extension VideoChatManager {
     
     /// 新加入的人发了ICE候选
     private func iceCandidate(data: Dictionary<String, Any>) {
-        let peerConnectionID = data["socketID"] as! String
+        let peerConnectionID = data["user"] as! String
         let sdpMid = data["id"] as! String
         let sdpMLineIndex = data["label"] as! Int32
         let sdp = data["candiate"] as! String
@@ -300,20 +311,43 @@ extension VideoChatManager {
         creatOfferOfAnswer(connection: peerConnection, id: data)
     }
     
-    /// 收到其他人的offer
+    /// 收到其他人的offer (收到offer表示自己是被叫方)
     private func offer(data: Dictionary<String, Any>) {
-        //        let sdp = data["sdp"] as! String
-        let peerConnectionID = data["user"] as! String
-        let peerConnection = creatPeerConnection(id: peerConnectionID)
-        creatOfferOfAnswer(connection: peerConnection, id: peerConnectionID, isOffer: false)
+        let sdp = data["sdp"] as! String
+        let caller = data["caller"] as! String
+        // 用主叫方的id创建一个连接
+        let peerConnection = creatPeerConnection(id: caller)
+//        creatOfferOfAnswer(connection: peerConnection, id: userID, isOffer: false)
+        
+        // 创建一个远程sdp
+        let remoteSDP = RTCSessionDescription(type: .offer, sdp: sdp)
+        peerConnection.setRemoteDescription(remoteSDP) { (error) in
+            if error == nil {
+                if peerConnection.signalingState == .haveRemoteOffer {
+                    peerConnection.answer(for: self.creatMeidaConstraint(), completionHandler: { (sdp, error) in
+                        // 发送answer
+                        let dict: [String : Any] = ["type": sdp!.type.rawValue, "sdp": sdp!.sdp, "caller": caller, "called": UserDefaults.standard.string(forKey: "name")!]
+                        SocketManager.shared.sendMessage(type: StaticValue.MessageKey.answer, data: dict)
+                    })
+                }
+            } else {
+                ht_print(message: error)
+            }
+        }
     }
     
-    /// 回应offer(收到answerOffer后又将自己包含SDP的offer发送给服务器，服务器转发给其他的connection。返回answer)
+    /// 收到answer(收到answerOffer后保存sdp，也就是setRemoteSDP)
     private func answerOffer(data: Dictionary<String, Any>) {
-        //        let sdp = sdpDict["sdp"] as! String
-        let peerConnectionID = data["userID"] as! String
-        let peerConnection = connectionDict[peerConnectionID]
-        creatOfferOfAnswer(connection: peerConnection!, id: peerConnectionID, isOffer: false)
+        let sdp = data["sdp"] as! String
+        let called = data["called"] as! String
+        let peerConnection = connectionDict[called]
+        let remoteSDP = RTCSessionDescription(type: .answer, sdp: sdp)
+        peerConnection?.setRemoteDescription(remoteSDP, completionHandler: { (error) in
+//            peerConnection?.answer(for: self.creatMeidaConstraint(), completionHandler: { (sdp, error) in
+//
+//            })
+        })
+//        creatOfferOfAnswer(connection: peerConnection!, id: peerConnectionID, isOffer: false)
     }
     
     /// 拒绝通话
@@ -325,10 +359,8 @@ extension VideoChatManager {
 
 // MARK: ^^^^^^^^^^^^^^^ Public Method ^^^^^^^^^^^^^^^
 extension VideoChatManager {
-    /// 连接到房间
-    ///
-    /// - Parameter room: 房间号
-    public func call(user: String) {
+    /// 初始化，为视频通话做准备
+    public func setUp() {
         if connectionDict == nil {
             connectionDict = Dictionary<String, RTCPeerConnection>()
         }
@@ -338,8 +370,6 @@ extension VideoChatManager {
         if localStream == nil {
             creatLocalStream()
         }
-        // 让服务器帮忙呼叫指定的人
-        SocketManager.shared.sendMessage(type: StaticValue.MessageKey.call, data: ["fromUser": UserDefaults.standard.string(forKey: "name")!, "toUser": user])
         
         // 添加socket回调监听
         addSocketObservers()
@@ -381,8 +411,9 @@ extension VideoChatManager: RTCPeerConnectionDelegate {       // 连接代理
         if let id = connectionDict.key(withValue: peerConnection) {
             let dict: [String: Any] = ["id": candidate.sdpMid ?? "", "label": candidate.sdpMLineIndex, "candidate": candidate.sdp, "user": id]
             SocketManager.shared.sendMessage(type: StaticValue.MessageKey.iceCandidate, data: dict)
+        } else {
+            ht_print(message: "获取内存中的连接失败请检查; \(connectionDict ?? [:])")
         }
-        ht_print(message: "获取内存中的连接失败请检查; \(connectionDict ?? [:])")
     }
     
     func peerConnectionShouldNegotiate(_ peerConnection: RTCPeerConnection) {
@@ -408,6 +439,17 @@ extension VideoChatManager: RTCPeerConnectionDelegate {       // 连接代理
     
 }
 
+extension VideoChatManager: RTCDataChannelDelegate {
+    func dataChannelDidChangeState(_ dataChannel: RTCDataChannel) {
+        ht_print(message: "数据通道状态改变; \(dataChannel.readyState.rawValue)")
+    }
+    
+    func dataChannel(_ dataChannel: RTCDataChannel, didReceiveMessageWith buffer: RTCDataBuffer) {
+        ht_print(message: "数据通道收到消息; \(String(data: buffer.data, encoding: .utf8))")
+    }
+    
+    
+}
 
 extension Dictionary {
     

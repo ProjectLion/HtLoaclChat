@@ -27,13 +27,13 @@ class VideoChatVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        VideoChatManager.shared.call(user: user)
+        VideoChatManager.shared.setUp()
         VideoChatManager.shared.delegate = self
         // Do any additional setup after loading the view.
     }
     
     @IBAction func closeVideo(_ sender: UIButton) {
-        VideoChatManager.shared.exitRoom(forUser: user)
+//        VideoChatManager.shared.exitRoom(forUser: user)
         dismiss(animated: true, completion: nil)
     }
     
@@ -48,6 +48,16 @@ extension VideoChatVC: VideoChatManagerDelegate {
             localVideoTrack.add(localVideoView)
             self.myVideoView.addSubview(localVideoView)
             self.myVideoView.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
+        }
+    }
+    func videoChat(manager: VideoChatManager, addRemoteStream stream: RTCMediaStream, userID id: String) {
+        DispatchQueue.main.async {
+//            let remoteVideoView = RTCEAGLVideoView(frame: self.remote.bounds)
+//            let remoteVideoTrack = stream.videoTracks.last!
+//            //            localVideoTrack.source.adaptOutputFormat(toWidth: 1280, height: 720, fps: 30)
+//            remoteVideoTrack.add(remoteVideoView)
+//            self.remote.addSubview(remoteVideoView)
+//            self.remote.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         }
     }
 }
