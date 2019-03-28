@@ -109,9 +109,9 @@ class SocketManager: NSObject {
     ///   - socket: socket
     private func sendMessage(type: String, data: Any, socket: GCDAsyncSocket) {
         let data = dictToString(dict: ["type": type, "data": data]).data(using: .utf8)
-        var intData = intToData(withValue: data!.count)
-        intData.append(data!)
-        socket.write(intData, withTimeout: 1, tag: 0)
+//        var intData = intToData(withValue: data!.count)
+//        intData.append(data!)
+        socket.write(data!, withTimeout: 1, tag: 0)
     }
     
 }
@@ -142,59 +142,60 @@ extension SocketManager: GCDAsyncSocketDelegate {
     /// readData(withTimeout: Int, tag: Int) 的回调
     func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
         // 包头(包头包含了正文的数据长度)
-        let headData = data.subdata(in: 0..<4)
-        // 正文length
-        let strLength = dataToInt(withData: headData)
-        let desc = String(data: data.subdata(in: 4..<4+strLength), encoding: .utf8)
+//        let headData = data.subdata(in: 0..<4)
+//        // 正文length
+//        let strLength = dataToInt(withData: headData)
+        let desc = String(data: data, encoding: .utf8)
         ht_print(message: "正文: \(desc!)")
-        let dict = try! JSONSerialization.jsonObject(with: data.subdata(in: 4..<4+strLength), options: .allowFragments) as? Dictionary<String, Any>
-        if let dic = dict {
-            switch dic["type"] as! String {
-            case StaticValue.MessageKey.name:
-                let name = dic["data"] as! String
-                // 当收到新用户的name时，将其分发给所有连接上的用户，通知他们刷新UI
-                for item in UsersManager.shared.userSocket.keys {
-                    sendMessage(type: StaticValue.MessageKey.newPeer, toUser: item, data: name)
-                }
-                // 将新用户的信息保存起来
-                UsersManager.shared.userSocket[dic["data"] as! String] = sock
-            case StaticValue.MessageKey.call:       // 收到呼叫信息后将通话请求转发给 toUser
-                
-                let data = dic["data"] as! Dictionary<String, String>
-                let toUser = data["toUser"]
-                // 将主叫方添加到房间
-                room.append(data["fromUser"]!)
-                sendMessage(type: StaticValue.MessageKey.called, toUser: toUser!, data: data)
-            case StaticValue.MessageKey.agree:      // 同意通话
-                let data = dic["data"] as! Dictionary<String, String>
-                let toUser = data["toUser"]
-                // 被叫放同意通话后将其加入房间
-                room.append(toUser!)
-                sendMessage(type: StaticValue.MessageKey.agree, toUser: toUser!, data: room)
-            case StaticValue.MessageKey.offer:            // 有人发了offer
-                let data = dic["data"] as! Dictionary<String, String>
-                let user = data["user"]!
-                // 将这个offer发送给房间里的所有人
-                for item in room {
-                    if item != user {
-                        sendMessage(type: StaticValue.MessageKey.offer, toUser: item, data: data)
-                    }
-                }
-            case StaticValue.MessageKey.answer:         // 回复offer
-                let data = dic["data"] as! Dictionary<String, String>
-                let user = data["user"]!
-                // 将这个answer发送给发offer的人
-                sendMessage(type: StaticValue.MessageKey.offer, toUser: user, data: data)
-            case StaticValue.MessageKey.name:
-                break
-            case StaticValue.MessageKey.name:
-                break
-            case StaticValue.MessageKey.name:
-                break
-            default:
-                break
+        var dic: Dictionary<String, Any> = [:]
+        do {
+            dic = try JSONSerialization.jsonObject(with: data, options: [.mutableLeaves, .allowFragments]) as! Dictionary<String, Any>
+        } catch let error {
+            ht_print(message: error)
+        }
+        switch dic["type"] as! String {
+        case StaticValue.MessageKey.name:
+            let name = dic["data"] as! String
+            // 当收到新用户的name时，将其分发给所有连接上的用户，通知他们刷新UI
+            for item in UsersManager.shared.userSocket.keys {
+                sendMessage(type: StaticValue.MessageKey.newUser, toUser: item, data: name)
             }
+            // 将新用户的信息保存起来
+            UsersManager.shared.userSocket[name] = sock
+        case StaticValue.MessageKey.call:       // 收到呼叫信息后将通话请求转发给 called(被叫)  caller(主叫)
             
+            let dat = dic["data"] as! Dictionary<String, String>
+            let called = dat["called"]
+            // 将主叫方添加到房间
+            room.append(dat["caller"]!)
+            sendMessage(type: StaticValue.MessageKey.called, toUser: called!, data: dat)
+        case StaticValue.MessageKey.agree:      // 被叫方同意通话 将消息转发给主叫方
+            let dat = dic["data"] as! Dictionary<String, String>
+            let caller = dat["caller"]
+            // 被叫放同意通话后将其加入房间
+            room.append(dat["called"]!)
+            sendMessage(type: StaticValue.MessageKey.agree, toUser: caller!, data: room)
+        case StaticValue.MessageKey.offer:            // 有人发了offer
+            let dat = dic["data"] as! Dictionary<String, Any>
+            let called = dat["called"] as! String
+            // 将这个offer发送给房间里的所有人
+            sendMessage(type: StaticValue.MessageKey.offer, toUser: called, data: dat)
+        case StaticValue.MessageKey.answer:         // 回复offer
+            let dat = dic["data"] as! Dictionary<String, Any>
+            let caller = dat["caller"] as! String
+            // 将这个answer发送给发offer的人
+            sendMessage(type: StaticValue.MessageKey.answer, toUser: caller, data: dat)
+        case StaticValue.MessageKey.iceCandidate:       // ice
+            let data = dic["data"] as! Dictionary<String, Any>
+            let user = data["user"] as! String
+            
+            sendMessage(type: StaticValue.MessageKey.iceCandidate, toUser: user, data: data)
+        case StaticValue.MessageKey.name:
+            break
+        case StaticValue.MessageKey.name:
+            break
+        default:
+            break
         }
         // 循环监听客户端的消息
         for item in bufferPool.values {
