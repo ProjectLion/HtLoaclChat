@@ -30,19 +30,18 @@ class UserListVC: UIViewController {
             case StaticValue.MessageKey.userList:
                 self.dataSource = data as! [String]
                 self.table.reloadData()
-            case StaticValue.MessageKey.newUser:
+            case StaticValue.MessageKey.newPeer:
                 self.dataSource.append(data as! String)
                 self.table.reloadData()
-            case StaticValue.MessageKey.called:     // 被呼叫
+            case StaticValue.MessageKey.call:     // 被呼叫
                 let dict = data as! Dictionary<String, String>
                 let caller = dict["caller"]
                 let alert = UIAlertController(title: nil, message: "\(caller!)请求通话", preferredStyle: .alert)
                 let action1 = UIAlertAction(title: "同意", style: .default, handler: { (action) in
                     
-                    SocketManager.shared.sendMessage(type: StaticValue.MessageKey.agree, data: data)
                     let videoVC = VideoChatVC(nibName: "VideoChatVC", bundle: nil)
-                    ht_print(message: caller!)
-                    videoVC.user = caller!
+                    videoVC.userName = caller!          // 自己是被叫方，所以将主叫的name传过去
+                    videoVC.isCaller = false
                     self.present(videoVC, animated: true, completion: nil)
                 })
                 let action2 = UIAlertAction(title: "拒绝", style: .destructive, handler: { (action) in
@@ -76,9 +75,7 @@ extension UserListVC: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let videoVC = VideoChatVC(nibName: "VideoChatVC", bundle: nil)
-        videoVC.user = dataSource[indexPath.row]
-        // 让服务器帮忙呼叫指定的人
-        SocketManager.shared.sendMessage(type: StaticValue.MessageKey.call, data: ["caller": UserDefaults.standard.string(forKey: "name")!, "called": dataSource[indexPath.row]])
+        videoVC.userName = dataSource[indexPath.row]
         present(videoVC, animated: true, completion: nil)
     }
 }

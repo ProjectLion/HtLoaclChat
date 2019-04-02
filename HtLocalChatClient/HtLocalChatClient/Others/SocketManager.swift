@@ -145,7 +145,7 @@ extension SocketManager {
         }
         do {
             // 服务器地址。运行服务器项目可查看其IP地址
-            try socket!.connect(toHost: "192.168.2.139", onPort: 8848)
+            try socket!.connect(toHost: "192.168.2.247", onPort: 8848)
         } catch let error {
             ht_print(message: "连接失败, error: \(error)")
         }
