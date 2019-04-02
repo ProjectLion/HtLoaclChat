@@ -158,7 +158,7 @@ extension SocketManager: GCDAsyncSocketDelegate {
             let name = dic["data"] as! String
             // 当收到新用户的name时，将其分发给所有连接上的用户，通知他们刷新UI
             for item in UsersManager.shared.userSocket.keys {
-                sendMessage(type: StaticValue.MessageKey.newUser, toUser: item, data: name)
+                sendMessage(type: StaticValue.MessageKey.newPeer, toUser: item, data: name)
             }
             // 将新用户的信息保存起来
             UsersManager.shared.userSocket[name] = sock
@@ -168,7 +168,7 @@ extension SocketManager: GCDAsyncSocketDelegate {
             let called = dat["called"]
             // 将主叫方添加到房间
             room.append(dat["caller"]!)
-            sendMessage(type: StaticValue.MessageKey.called, toUser: called!, data: dat)
+            sendMessage(type: StaticValue.MessageKey.call, toUser: called!, data: dat)
         case StaticValue.MessageKey.agree:      // 被叫方同意通话 将消息转发给主叫方
             let dat = dic["data"] as! Dictionary<String, String>
             let caller = dat["caller"]
@@ -180,11 +180,11 @@ extension SocketManager: GCDAsyncSocketDelegate {
             let called = dat["called"] as! String
             // 将这个offer发送给房间里的所有人
             sendMessage(type: StaticValue.MessageKey.offer, toUser: called, data: dat)
-        case StaticValue.MessageKey.answer:         // 回复offer
+        case StaticValue.MessageKey.answerOffer:         // 回复offer
             let dat = dic["data"] as! Dictionary<String, Any>
             let caller = dat["caller"] as! String
             // 将这个answer发送给发offer的人
-            sendMessage(type: StaticValue.MessageKey.answer, toUser: caller, data: dat)
+            sendMessage(type: StaticValue.MessageKey.answerOffer, toUser: caller, data: dat)
         case StaticValue.MessageKey.iceCandidate:       // ice
             let data = dic["data"] as! Dictionary<String, Any>
             let user = data["user"] as! String
